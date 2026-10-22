@@ -1,0 +1,839 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta property="og:title" content="Doreno B.V. · Merkpakket & content"><meta property="og:description" content="Presentatie door IBRATECH.AI — huisstijl, raster, 9 carrousels, 2 video’s, stem en geluid."><meta property="og:image" content="https://ai-praktika.github.io/doreno/img/og.jpg"><meta property="og:type" content="website"><link rel="icon" href="logo/DORENO_beeldmerk_huis_grafiet.svg"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style></head><body><title>Doreno · Merkpakket</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="robots" content="noindex">
+<meta name="description" content="Doreno B.V. — merkpakket en content, voorbereid door IBRATECH.AI">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;600;700;800&family=Onest:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: warm linen editorial presentation — wide chapters, photo-led, one brass accent per block */
+:root{
+  --linen:#F3EFE7; --paper:#FBF8F2; --sand:#E8E0D1; --line:#DCD3C3;
+  --graphite:#4D4D4D; --ink:#262624; --muted:#6F6A61;
+  --eik:#A97E50; --brass:#D5B565; --brass-deep:#B8963F;
+  --ok:#5E7A55;
+  --f-display:'Outfit','Onest',ui-sans-serif,system-ui,sans-serif;
+  --f-body:'Nunito','Onest',ui-sans-serif,system-ui,sans-serif;
+  --r:14px; --shadow:0 18px 50px -24px rgba(38,38,36,.45);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--linen);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:rgba(243,239,231,.92)}
+html.l-ru [data-l="nl"],html.l-nl [data-l="ru"]{display:none!important}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--brass-deep);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1220px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:800;line-height:1.02;letter-spacing:-.01em;margin:0;text-wrap:balance}
+.eyebrow{font-family:var(--f-body);font-weight:800;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--eik)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:62ch}
+.acc{display:block;width:72px;height:6px;border-radius:3px;background:var(--brass)}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(243,239,231,.86);backdrop-filter:saturate(1.2) blur(14px);-webkit-backdrop-filter:saturate(1.2) blur(14px);border-bottom:1px solid rgba(220,211,195,.7)}
+.top .wrap{display:flex;align-items:center;gap:18px;height:64px}
+.brandmini{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.brandmini img{height:30px;width:auto}
+.brandmini span{font-weight:800;font-size:13px;letter-spacing:.08em;color:var(--graphite);white-space:nowrap}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;mask-image:linear-gradient(90deg,#000 92%,transparent)}
+.nav::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none;font-weight:700;font-size:14px;color:var(--muted);padding:8px 12px;border-radius:99px;white-space:nowrap;transition:.25s}
+.nav a:hover,.nav a.on{color:var(--ink);background:var(--sand)}
+.tools{display:flex;gap:8px;flex:none}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:7px 12px;font-weight:800;font-size:13px;letter-spacing:.04em;transition:.25s}
+.pill:hover{border-color:var(--eik)}
+.lang b{opacity:.35;font-weight:800}.lang b.on{opacity:1;color:var(--ink)}
+.snd .bars{display:inline-flex;gap:2px;align-items:flex-end;height:14px}
+.snd .bars i{width:3px;background:var(--eik);border-radius:2px;height:4px}
+.snd.on .bars i{animation:eq 1s ease-in-out infinite}
+.snd.on .bars i:nth-child(2){animation-delay:.2s}.snd.on .bars i:nth-child(3){animation-delay:.4s}.snd.on .bars i:nth-child(4){animation-delay:.1s}
+@keyframes eq{0%,100%{height:4px}50%{height:14px}}
+@media (max-width:860px){.nav{display:none}.brandmini span{display:none}.top .wrap{justify-content:space-between}}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-block:64px 72px}
+.hero-l{display:flex;flex-direction:column;gap:26px;min-width:0}
+.logo-shine{position:relative;display:inline-block;width:min(440px,78vw);aspect-ratio:1115/934;cursor:pointer;transition:transform 1.1s cubic-bezier(.2,.8,.2,1);-webkit-tap-highlight-color:transparent}
+.logo-shine img{width:100%;height:100%;filter:drop-shadow(0 -1px 0 rgba(255,255,255,.95)) drop-shadow(0 1.5px 0 rgba(38,38,36,.32)) drop-shadow(0 3px 2px rgba(38,38,36,.18)) drop-shadow(0 14px 22px rgba(38,38,36,.16))}
+.logo-shine .gloss{position:absolute;inset:0;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat;
+  background:linear-gradient(110deg,transparent 0%,transparent 34%,rgba(255,250,236,.18) 41%,rgba(255,255,255,.62) 48%,rgba(255,244,214,.55) 51%,rgba(255,250,236,.16) 58%,transparent 66%,transparent 100%);
+  background-size:300% 100%;background-position:150% 0;pointer-events:none;mix-blend-mode:screen;filter:blur(1.5px)}
+.logo-shine .gloss2{position:absolute;inset:0;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat;background:linear-gradient(165deg,rgba(255,255,255,.30) 0%,rgba(255,255,255,.06) 38%,rgba(0,0,0,0) 55%,rgba(0,0,0,.14) 100%);pointer-events:none}
+.logo-shine.sweep .gloss{animation:sweep 3.4s cubic-bezier(.42,0,.38,1) forwards}
+.logo-shine:hover{transform:scale(1.05)}
+.logo-shine:active{transform:scale(1.03)}
+@keyframes sweep{from{background-position:150% 0}to{background-position:-50% 0}}
+.hero h1{font-size:clamp(34px,4.6vw,58px)}
+.hero h1 em{font-style:normal;color:var(--eik)}
+.stats{display:flex;flex-wrap:wrap;gap:10px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 16px;display:flex;align-items:baseline;gap:8px}
+.stat b{font-family:var(--f-display);font-size:24px;font-weight:800}
+.stat span{font-size:14px;color:var(--muted);font-weight:700}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:99px;padding:14px 22px;font-weight:800;font-size:15px;letter-spacing:.02em;text-decoration:none;transition:transform .25s,box-shadow .25s,background .25s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.dark{background:var(--ink);color:var(--linen)}
+.btn.dark:hover{transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(38,38,36,.6)}
+.btn.brass{background:var(--brass);color:var(--ink)}
+.btn.brass:hover{transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(184,150,63,.8)}
+.btn.ghost{background:transparent;border:1.5px solid var(--graphite);color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--linen)}
+.btn.sm{padding:9px 14px;font-size:13px}
+.btn.sm svg{width:15px;height:15px}
+.phone{position:relative;justify-self:center;width:min(330px,80vw);aspect-ratio:9/16.9;border-radius:44px;background:#1d1d1b;padding:11px;box-shadow:0 40px 90px -40px rgba(38,38,36,.75),inset 0 0 0 2px #3a3a37;transform:rotate(2.5deg);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.phone:hover{transform:rotate(0) scale(1.02)}
+.phone video{width:100%;height:100%;object-fit:cover;border-radius:36px;background:#2b2b29}
+.phone .notch{position:absolute;top:20px;left:50%;transform:translateX(-50%);width:84px;height:22px;border-radius:12px;background:#111;z-index:2}
+.phone .tag{position:absolute;left:-26px;bottom:70px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-weight:800;font-size:13px;box-shadow:var(--shadow);transform:rotate(-2.5deg)}
+.phone .tag small{display:block;font-weight:700;color:var(--muted);font-size:12px}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:44px;padding-block:40px 56px}.phone{transform:none}}
+
+/* sections */
+section.ch{padding-block:96px 24px}
+.ch-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:44px}
+.ch-head h2{font-size:clamp(34px,4.4vw,56px)}
+.ch-head .num{font-family:var(--f-display);font-weight:300;color:var(--eik);font-size:20px;letter-spacing:.06em;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.ch-head .num::after{content:"";height:1px;width:56px;background:var(--eik);opacity:.5}
+@media (max-width:820px){.ch-head{grid-template-columns:1fr;gap:16px}section.ch{padding-block:72px 16px}}
+.band{background:var(--paper);border-block:1px solid var(--line)}
+.band.deep{background:var(--ink);color:var(--linen);border:0}
+.sub-h{display:flex;align-items:center;gap:14px;margin:56px 0 20px}
+.sub-h h3{font-size:24px}
+.sub-h .eyebrow{margin-left:auto}
+
+/* brand: logo usage */
+.uses{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.use{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--paper);display:flex;flex-direction:column}
+.use .pad{aspect-ratio:4/3;display:grid;place-items:center;padding:34px;transition:transform .5s}
+.use:hover .pad{transform:scale(1.04)}
+.use .pad img{max-height:150px;width:auto}
+.use.dk .pad{background:var(--graphite)}
+.use .cap{padding:16px 18px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.use .cap b{font-size:16px}
+.use .cap span{color:var(--muted);font-size:14px}
+@media (max-width:760px){.uses{grid-template-columns:1fr}}
+.note{display:flex;gap:12px;align-items:flex-start;background:rgba(213,181,101,.14);border:1px solid rgba(213,181,101,.45);border-radius:12px;padding:14px 16px;margin-top:18px;font-size:15px}
+.note::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--brass-deep);margin-top:8px}
+
+/* palette */
+.swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.sw{border:0;padding:0;text-align:left;background:var(--paper);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);transition:transform .35s,box-shadow .35s}
+.sw:hover{transform:translateY(-6px) scale(1.02);box-shadow:var(--shadow)}
+.sw .chip{height:150px;display:flex;align-items:flex-end;padding:12px}
+.sw .chip i{font-style:normal;font-size:12px;font-weight:800;letter-spacing:.1em;padding:5px 9px;border-radius:99px;background:rgba(255,255,255,.75);color:var(--ink);opacity:0;transition:.3s}
+.sw:hover .chip i,.sw:focus-visible .chip i{opacity:1}
+.sw .meta{padding:14px 14px 16px;display:flex;flex-direction:column;gap:2px}
+.sw .meta b{font-family:var(--f-display);font-size:19px}
+.sw .meta code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--eik);font-weight:700}
+.sw .meta span{font-size:13px;color:var(--muted);line-height:1.45;margin-top:6px}
+@media (max-width:980px){.swatches{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.swatches{grid-template-columns:repeat(2,1fr)}}
+.rhythm{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.rhythm .t{width:44px;height:58px;border-radius:6px;border:1px solid var(--line)}
+.rhythm .t.l{background:var(--linen)}.rhythm .t.d{background:var(--graphite)}
+.rhythm span{font-weight:700;color:var(--muted);font-size:14px;margin-left:8px}
+
+/* type */
+.types{display:grid;grid-template-columns:1.25fr 1fr;gap:18px}
+.type{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.type .spec{font-family:'Outfit',sans-serif;font-weight:800;font-size:clamp(34px,4vw,52px);line-height:.98;text-transform:uppercase;color:var(--ink)}
+.type .spec2{font-family:'Nunito',sans-serif;font-weight:800;font-size:clamp(22px,2.4vw,28px);color:var(--graphite)}
+.type .row{display:flex;flex-wrap:wrap;gap:8px}
+.type .row span{font-size:13px;font-weight:800;border-radius:99px;padding:5px 11px;background:var(--sand)}
+.type p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:820px){.types{grid-template-columns:1fr}}
+
+/* preset slider */
+.preset{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+.ba{position:relative;width:min(340px,82vw);aspect-ratio:405/720;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);user-select:none;touch-action:pan-y;cursor:ew-resize}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .after{clip-path:inset(0 0 0 var(--x,50%))}
+.ba .knob{position:absolute;top:0;bottom:0;left:var(--x,50%);width:2px;background:#fff;transform:translateX(-1px)}
+.ba .knob::after{content:"⟷";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:18px;color:var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.ba .lab{position:absolute;bottom:12px;font-size:11px;font-weight:800;letter-spacing:.14em;background:rgba(38,38,36,.72);color:#fff;padding:5px 9px;border-radius:99px}
+.ba .lab.l{left:12px}.ba .lab.r{right:12px;background:var(--brass);color:var(--ink)}
+.ptable{display:grid;gap:10px;min-width:0}
+.prow{display:grid;grid-template-columns:190px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.prow b{font-weight:800}
+.prow span{color:var(--muted)}
+@media (max-width:820px){.preset{grid-template-columns:1fr;justify-items:center}.prow{grid-template-columns:1fr;gap:2px}.ptable{width:100%}}
+.platen{border-radius:var(--r);overflow:hidden;background:#262624;border:1px solid var(--line)}
+.platen img{width:100%;transition:transform .6s}
+.platen:hover img{transform:scale(1.02)}
+
+/* marketing */
+.claim{font-family:var(--f-display);font-weight:800;font-size:clamp(40px,6.4vw,88px);line-height:.95;text-transform:uppercase;letter-spacing:-.01em}
+.claim small{display:block;font-size:clamp(18px,2vw,24px);font-weight:600;text-transform:none;letter-spacing:0;color:var(--brass);margin-top:20px;font-family:var(--f-body)}
+.mk{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.mk .c{border:1px solid rgba(243,239,231,.16);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:10px;transition:background .35s,transform .35s}
+.mk .c:hover{background:rgba(243,239,231,.06);transform:translateY(-4px)}
+.mk .c h3{font-size:22px;color:var(--linen)}
+.mk .c p{margin:0;color:rgba(243,239,231,.72);font-size:15px}
+.mk .c .k{font-weight:800;font-size:12px;letter-spacing:.2em;color:var(--brass);text-transform:uppercase}
+@media (max-width:860px){.mk{grid-template-columns:1fr}}
+.voice-rules{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.vr{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px;min-width:0}
+.vr h3{font-size:19px;margin-bottom:10px}
+.vr ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:15px}
+.vr li::marker{color:var(--eik)}
+@media (max-width:760px){.voice-rules{grid-template-columns:1fr}}
+.rubrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.rubrics span{font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;background:var(--brass);color:var(--ink);padding:7px 11px;border-radius:6px}
+
+/* grid */
+.gridzone{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:start}
+.ig{width:min(390px,92vw);background:#fff;border-radius:34px;padding:16px 0 0;box-shadow:0 40px 90px -45px rgba(38,38,36,.7);border:8px solid #1d1d1b;overflow:hidden}
+.ig .bar{display:flex;align-items:center;gap:14px;padding:6px 16px 14px}
+.ig .av{width:66px;height:66px;border-radius:50%;background:var(--graphite);display:grid;place-items:center;flex:none;outline:2px solid #fff;box-shadow:0 0 0 3px var(--brass)}
+.ig .av img{width:40px}
+.ig .who b{display:block;font-size:15px}
+.ig .who span{font-size:13px;color:#777}
+.ig .tabs{display:flex;border-top:1px solid #eee}
+.ig .tabs i{flex:1;height:36px;display:grid;place-items:center;font-style:normal;font-size:12px;font-weight:800;letter-spacing:.1em;color:#aaa}
+.ig .tabs i.on{color:#222;box-shadow:inset 0 -2px #222}
+.ig .cells{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#fff}
+.cell{position:relative;aspect-ratio:3/4;overflow:hidden;border:0;padding:0;background:#ddd}
+.cell img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.cell:hover img{transform:scale(1.08)}
+.cell .stp{position:absolute;top:6px;right:6px;width:26px;height:26px;border-radius:50%;background:var(--brass);color:var(--ink);font-weight:800;font-size:13px;display:grid;place-items:center;opacity:0;transform:scale(.6);transition:.35s;box-shadow:0 4px 10px rgba(0,0,0,.3)}
+.show-order .cell .stp{opacity:1;transform:none}
+.cell .row-hl{position:absolute;inset:0;box-shadow:inset 0 0 0 3px var(--brass);opacity:0;transition:.3s}
+.cell.hl .row-hl{opacity:1}
+.rows{display:grid;gap:14px;min-width:0}
+.rowcard{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:14px;transition:border-color .3s,transform .3s}
+.rowcard:hover{border-color:var(--eik);transform:translateX(4px)}
+.rowcard .mini{display:flex;gap:4px}
+.rowcard .mini img{width:42px;aspect-ratio:3/4;object-fit:cover;border-radius:4px}
+.rowcard b{display:block;font-size:16px}
+.rowcard span{font-size:14px;color:var(--muted)}
+.order-steps{counter-reset:s;display:grid;gap:10px;margin:6px 0 4px;padding:0;list-style:none}
+.order-steps li{display:flex;gap:12px;align-items:flex-start;font-size:15px}
+.order-steps li::before{counter-increment:s;content:counter(s);flex:none;width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--linen);font-weight:800;font-size:13px;display:grid;place-items:center;margin-top:1px}
+.switch{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:14px;cursor:pointer;user-select:none}
+.switch input{appearance:none;width:42px;height:24px;border-radius:99px;background:var(--line);position:relative;transition:.3s;cursor:pointer;margin:0}
+.switch input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.3s;box-shadow:0 1px 4px rgba(0,0,0,.25)}
+.switch input:checked{background:var(--eik)}
+.switch input:checked::after{left:21px}
+@media (max-width:900px){.gridzone{grid-template-columns:1fr;justify-items:center}.rows{width:100%}}
+@media (max-width:480px){.rowcard{grid-template-columns:1fr auto}.rowcard .mini{display:none}}
+
+/* posts */
+.posts{display:grid;gap:28px}
+.post{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:24px;display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:32px;align-items:start}
+.car{display:grid;gap:12px;min-width:0}
+.view{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5;background:var(--sand);box-shadow:var(--shadow)}
+.view .trk{display:flex;height:100%;transition:transform .55s cubic-bezier(.2,.8,.2,1);touch-action:pan-y}
+.view .trk button{flex:0 0 100%;height:100%;border:0;padding:0;background:none;overflow:hidden;cursor:zoom-in}
+.view .trk img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.view:hover .trk img{transform:scale(1.035)}
+.view .arr{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(251,248,242,.9);display:grid;place-items:center;box-shadow:0 6px 16px rgba(0,0,0,.2);opacity:0;transition:.3s}
+.view:hover .arr,.view:focus-within .arr{opacity:1}
+.view .arr svg{width:18px;height:18px}
+.view .arr.p{left:10px}.view .arr.n{right:10px}
+.view .cnt{position:absolute;top:12px;right:12px;background:rgba(38,38,36,.7);color:#fff;font-weight:800;font-size:12px;padding:5px 10px;border-radius:99px;letter-spacing:.06em}
+.view .sdl{position:absolute;bottom:12px;right:12px;width:40px;height:40px;background:rgba(251,248,242,.92);border:0}
+.dots{display:flex;gap:6px;justify-content:center}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--line);transition:.3s}
+.dots i.on{background:var(--eik);width:20px;border-radius:4px}
+.thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.thumbs button{border:0;padding:0;background:none;display:grid;gap:5px;text-align:left;opacity:.62;transition:opacity .3s}
+.thumbs button.on,.thumbs button:hover{opacity:1}
+.thumbs img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:7px;transition:transform .3s}
+.thumbs button:hover img{transform:translateY(-3px)}
+.thumbs button.on img{box-shadow:0 0 0 2px var(--eik)}
+.thumbs span{font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.icon-btn{border:1px solid var(--line);background:var(--linen);border-radius:99px;width:30px;height:30px;display:inline-grid;place-items:center;flex:none;transition:.25s;padding:0}
+.icon-btn:hover{background:var(--ink);color:var(--linen);border-color:var(--ink)}
+.icon-btn svg{width:15px;height:15px}
+.pinfo{display:flex;flex-direction:column;gap:16px;min-width:0}
+.ptop{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.badge{font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:6px;background:var(--sand)}
+.badge.b{background:var(--brass)}
+.badge.tone-l{background:var(--linen);border:1px solid var(--line)}
+.badge.tone-d{background:var(--graphite);color:var(--linen)}
+.pinfo h3{font-size:clamp(26px,2.8vw,36px);text-transform:uppercase}
+.tabs2{display:flex;gap:4px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tabs2 button{border:0;background:none;padding:10px 12px;font-weight:800;font-size:14px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs2 button.on{color:var(--ink);border-color:var(--brass-deep)}
+.txt{position:relative;background:var(--linen);border:1px solid var(--line);border-radius:12px;padding:18px 18px 64px;white-space:pre-wrap;font-size:15px;line-height:1.62;overflow-wrap:anywhere}
+.txt .cp{position:absolute;right:12px;bottom:12px}
+.txt.ru{color:var(--muted)}
+.pact{display:flex;gap:10px;flex-wrap:wrap}
+.order-hint{font-size:13px;color:var(--muted);font-weight:700}
+@media (max-width:860px){.post{grid-template-columns:1fr;padding:16px;gap:20px}.view .arr{opacity:1}}
+/* reels */
+.reels{display:grid;grid-template-columns:1fr;gap:28px}
+.reel{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:24px;display:grid;grid-template-columns:auto minmax(0,1fr) 260px;gap:32px;align-items:start}
+.vcol{display:grid;gap:14px;justify-items:center;align-content:start}
+.ccol{display:grid;gap:12px;align-content:start}
+.vbox{position:relative;width:min(300px,72vw);aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:#222;box-shadow:var(--shadow)}
+.vbox video{width:100%;height:100%;object-fit:cover}
+.vbox .play{position:absolute;inset:0;display:grid;place-items:center;border:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.15));transition:.3s}
+.vbox .play span{width:64px;height:64px;border-radius:50%;background:rgba(243,239,231,.92);display:grid;place-items:center;transition:transform .3s;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.vbox .play:hover span{transform:scale(1.1)}
+.vbox .play svg{width:24px;height:24px;margin-left:4px;color:var(--ink)}
+.vbox.playing .play{opacity:0;pointer-events:none}
+.seg{display:inline-flex;background:var(--linen);border:1px solid var(--line);border-radius:99px;padding:3px}
+.seg button{border:0;background:none;border-radius:99px;padding:7px 12px;font-weight:800;font-size:13px;color:var(--muted)}
+.seg button.on{background:var(--ink);color:var(--linen)}
+.rinfo{display:flex;flex-direction:column;gap:14px;min-width:0}
+.rinfo h3{font-size:26px;text-transform:uppercase}
+.reel .txt{min-height:150px}
+@media (max-width:1100px){.reel{grid-template-columns:auto minmax(0,1fr)}.ccol{grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,200px))}.ccol .fineprint{grid-column:1/-1}}
+@media (max-width:620px){.reel{grid-template-columns:1fr;justify-items:center;padding:16px}.rinfo{width:100%}}
+
+
+.cover{position:relative;display:block;width:100%;border-radius:14px;overflow:hidden;border:0;padding:0;background:var(--sand);box-shadow:var(--shadow);cursor:zoom-in}
+.cover img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.cover:hover img{transform:scale(1.05)}
+/* audio */
+.audios{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+#beds{grid-template-columns:repeat(3,1fr)}
+#beds .au{grid-template-columns:1fr}
+#beds .pb{width:50px;height:50px}
+.au{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;transition:transform .3s,box-shadow .3s}
+.au:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.au.cur{border-color:var(--brass-deep);box-shadow:0 0 0 1px var(--brass-deep)}
+.au .pb{width:58px;height:58px;border-radius:50%;border:0;background:var(--ink);color:var(--linen);display:grid;place-items:center;transition:.25s}
+.au .pb:hover{background:var(--eik);transform:scale(1.06)}
+.au .pb svg{width:22px;height:22px}
+.au .body{display:flex;flex-direction:column;gap:8px;min-width:0}
+.au .h{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.au .h b{font-family:var(--f-display);font-size:19px}
+.au .h .badge{font-size:10px;padding:4px 8px}
+.au .d{font-size:14px;color:var(--muted)}
+.wave{display:flex;align-items:center;gap:2px;height:38px;cursor:pointer}
+.wave i{flex:1;background:var(--line);border-radius:2px;min-height:3px;transition:background .15s}
+.wave i.p{background:var(--eik)}
+.au .ft{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+@media (max-width:980px){#beds{grid-template-columns:1fr}#beds .au{grid-template-columns:auto 1fr}}@media (max-width:860px){.audios{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.form{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;gap:16px;color:var(--ink)}
+.form label{font-weight:800;font-size:13px;letter-spacing:.06em;display:grid;gap:8px}
+.form input,.form textarea{font:inherit;font-size:16px;border:1px solid var(--line);background:var(--linen);border-radius:12px;padding:13px 14px;color:var(--ink);width:100%}
+.form textarea{min-height:130px;resize:vertical}
+.form input:focus,.form textarea:focus{outline:2px solid var(--brass);border-color:transparent}
+.rec{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border:1px dashed var(--eik);border-radius:12px;padding:14px;background:rgba(213,181,101,.08)}
+.rec .dot{width:12px;height:12px;border-radius:50%;background:#c0392b;opacity:0}
+.rec.on .dot{opacity:1;animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.25}}
+.rec .tm{font-variant-numeric:tabular-nums;font-weight:800}
+.rec audio{height:38px;max-width:100%}
+.fineprint{font-size:13px;color:var(--muted)}
+.deep .fineprint{color:rgba(243,239,231,.6)}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+
+/* footer */
+footer{padding-block:90px 70px;text-align:center}
+footer .stack{display:flex;flex-direction:column;align-items:center;gap:22px}
+.ibra{width:min(250px,60vw);aspect-ratio:358/326;--m:url(logo/ibrahatuev_dark.svg)}
+.ibra .gloss2{display:none}
+.proj{font-family:var(--f-display);font-weight:800;font-size:clamp(26px,3vw,34px)}
+.proj-sub{color:var(--muted);font-weight:700;font-size:15px}
+.for{display:flex;align-items:center;gap:14px;justify-content:center;font-weight:800;color:var(--muted);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.for img{height:58px;width:auto}
+.divider{width:1px;height:56px;background:var(--line)}
+
+/* lightbox & toast */
+.lb-wrap{position:fixed;inset:0;z-index:90;background:rgba(28,28,26,.92);display:grid;grid-template-rows:auto 1fr auto;padding:calc(14px + env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px));opacity:0;pointer-events:none;transition:opacity .3s}
+.lb-wrap.on{opacity:1;pointer-events:auto}
+.lb-top{display:flex;justify-content:space-between;align-items:center;color:var(--linen);font-weight:800;gap:10px}
+.lb-img{display:grid;place-items:center;min-height:0;padding:10px 0}
+.lb-img img{max-height:100%;max-width:100%;border-radius:10px;object-fit:contain;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lb-nav{display:flex;justify-content:center;gap:12px}
+.lb-wrap .icon-btn{width:46px;height:46px;background:rgba(243,239,231,.12);border-color:rgba(243,239,231,.25);color:var(--linen)}
+.lb-wrap .icon-btn svg{width:18px;height:18px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--linen);padding:12px 18px;border-radius:99px;font-weight:800;font-size:14px;opacity:0;transition:.35s;z-index:95;pointer-events:none;max-width:calc(100vw - 32px);text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+.reveal{transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.pre{opacity:.001;transform:translateY(26px)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .reveal.pre{opacity:1;transform:none}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brandmini" href="#top"><img src="logo/DORENO_beeldmerk_huis_grafiet.svg" alt="Doreno"><span>DORENO × IBRATECH.AI</span></a>
+    <nav class="nav" id="nav">
+      <a href="#merk"><span data-l="ru">Бренд</span><span data-l="nl">Merk</span></a>
+      <a href="#marketing"><span data-l="ru">Маркетинг</span><span data-l="nl">Marketing</span></a>
+      <a href="#raster"><span data-l="ru">Сетка</span><span data-l="nl">Raster</span></a>
+      <a href="#posts"><span data-l="ru">Публикации</span><span data-l="nl">Posts</span></a>
+      <a href="#reels"><span data-l="ru">Ролики</span><span data-l="nl">Reels</span></a>
+      <a href="#geluid"><span data-l="ru">Голос и звук</span><span data-l="nl">Stem &amp; geluid</span></a>
+      <a href="#contact"><span data-l="ru">Связь</span><span data-l="nl">Contact</span></a>
+    </nav>
+    <div class="tools">
+      <button class="pill lang" id="lang" aria-label="Язык / Taal"><b data-v="ru">RU</b><b data-v="nl">NL</b></button>
+      <button class="pill snd" id="snd" aria-pressed="false" aria-label="Фоновый звук"><span class="bars"><i></i><i></i><i></i><i></i></span><span data-l="ru">Звук</span><span data-l="nl">Geluid</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-l reveal">
+      <div class="eyebrow"><span data-l="ru">Презентация · Gent · октябрь 2026</span><span data-l="nl">Presentatie · Gent · oktober 2026</span></div>
+      <div class="logo-shine" id="heroLogo" style="--m:url(logo/DORENO_logo_zonder_slogan_grafiet.svg)" role="img" aria-label="Doreno">
+        <img src="logo/DORENO_logo_zonder_slogan_grafiet.svg" alt="Doreno"><span class="gloss2"></span><span class="gloss"></span>
+      </div>
+      <h1><span data-l="ru">Бренд-упаковка и&nbsp;контент <em>Doreno B.V.</em></span><span data-l="nl">Merkpakket en content voor <em>Doreno B.V.</em></span></h1>
+      <p class="lead" style="margin:0"><span data-l="ru">Здесь всё, что мы подготовили: фирменный стиль, маркетинг, сетка Instagram, 9 готовых каруселей с текстами, 2 ролика, диктор и фоновый звук. Каждый файл можно скачать и сразу опубликовать.</span><span data-l="nl">Hier vindt u alles wat we voor u maakten: huisstijl, marketing, het Instagram-raster, 9 kant-en-klare carrousels met teksten, 2 video's, een stem en achtergrondgeluid. Elk bestand kunt u downloaden en meteen posten.</span></p>
+      <div class="stats">
+        <div class="stat"><b>9</b><span data-l="ru">каруселей</span><span data-l="nl">carrousels</span></div>
+        <div class="stat"><b>45</b><span data-l="ru">слайдов</span><span data-l="nl">slides</span></div>
+        <div class="stat"><b>2</b><span data-l="ru">ролика</span><span data-l="nl">video's</span></div>
+        <div class="stat"><b>2</b><span data-l="ru">диктора</span><span data-l="nl">stemmen</span></div>
+        <div class="stat"><b>3</b><span data-l="ru">фона</span><span data-l="nl">achtergronden</span></div>
+      </div>
+      <div class="ctas">
+        <a class="btn dark" href="#raster"><span data-l="ru">Смотреть сетку</span><span data-l="nl">Bekijk het raster</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <button class="btn brass" data-dl="zip/DORENO_alle_posts.zip" data-name="DORENO_alle_posts.zip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-l="ru">Скачать все посты</span><span data-l="nl">Alle posts downloaden</span></button>
+      </div>
+    </div>
+    <div class="phone reveal">
+      <span class="notch"></span>
+      <video id="heroVid" src="video/DORENO_REEL_A.mp4" poster="video/DORENO_REEL_A_cover.jpg" muted loop playsinline autoplay preload="metadata"></video>
+      <div class="tag">Reel A · 25 s<small><span data-l="ru">«От фундамента до ключа»</span><span data-l="nl">"Van fundering tot sleutel"</span></small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 BRAND -->
+<section class="ch band" id="merk">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div><div class="num">01</div><h2><span data-l="ru">Брендовая упаковка</span><span data-l="nl">Merkpakket</span></h2></div>
+      <p class="lead"><span data-l="ru">Логотип, цвета и шрифты взяты из вашего собственного логотипа и ваших материалов: светлый дуб, белые стены, матово-чёрные рамы. Отсюда тёплый минимализм.</span><span data-l="nl">Logo, kleuren en lettertypes komen uit uw eigen logo en uw materialen: licht eiken, witte muren, mat zwarte kaders. Zo ontstaat warm minimalisme.</span></p>
+    </div>
+
+    <div class="sub-h"><h3><span data-l="ru">Логотип: какой и где</span><span data-l="nl">Logo: welk en waar</span></h3><span class="eyebrow">Logo</span></div>
+    <div class="uses reveal">
+      <div class="use"><div class="pad"><img src="logo/DORENO_logo_volledig_grafiet.svg" alt="Doreno logo met slogan"></div><div class="cap"><b><span data-l="ru">Полный, со слоганом</span><span data-l="nl">Volledig, met slogan</span></b><span><span data-l="ru">Печать, фургон, сайт</span><span data-l="nl">Drukwerk, bestelwagen, website</span></span></div></div>
+      <div class="use dk"><div class="pad"><img src="logo/DORENO_logo_volledig_wit.svg" alt="Doreno logo wit" style="max-height:150px"></div><div class="cap"><b><span data-l="ru">Без слогана, белый</span><span data-l="nl">Zonder slogan, wit</span></b><span><span data-l="ru">Посты, рилсы, сторис — на фото и тёмном фоне</span><span data-l="nl">Posts, reels, stories — op foto en donkere achtergrond</span></span></div></div>
+      <div class="use"><div class="pad"><img src="logo/DORENO_beeldmerk_huis_grafiet.svg" alt="Doreno beeldmerk"></div><div class="cap"><b><span data-l="ru">Только дом</span><span data-l="nl">Alleen het huis</span></b><span><span data-l="ru">Аватар профиля и обложки актуального</span><span data-l="nl">Profielfoto en highlights</span></span></div></div>
+    </div>
+    <div class="note"><span><span data-l="ru">Слово «doreno» никогда не набирается шрифтом — только файлом логотипа. На постах логотип стоит без слогана: на маленьком размере слоган не читается.</span><span data-l="nl">Het woord "doreno" typen we nooit in een lettertype — altijd het logobestand. Op posts staat het logo zonder slogan: klein is de slogan niet leesbaar.</span></span></div>
+
+    <div class="sub-h"><h3><span data-l="ru">Цвета</span><span data-l="nl">Kleuren</span></h3><span class="eyebrow"><span data-l="ru">нажмите, чтобы скопировать</span><span data-l="nl">klik om te kopiëren</span></span></div>
+    <div class="swatches reveal" id="swatches"></div>
+    <div class="rhythm"><div class="t l"></div><div class="t d"></div><div class="t d"></div><div class="t l"></div><div class="t d"></div><div class="t d"></div><span><span data-l="ru">Ритм сетки: светлый → тёмный → тёмный, целыми тройками</span><span data-l="nl">Ritme van het raster: licht → donker → donker, per drie</span></span></div>
+
+    <div class="sub-h"><h3><span data-l="ru">Шрифты</span><span data-l="nl">Lettertypes</span></h3><span class="eyebrow">Typografie</span></div>
+    <div class="types reveal">
+      <div class="type"><div class="row"><span>Outfit ExtraBold 800</span><span>CAPS</span><span data-l="ru">заголовки</span><span data-l="nl">titels</span></div>
+        <div class="spec">Van fundering<br>tot sleutel.</div>
+        <p><span data-l="ru">Круглые геометрические формы повторяют линии вашего логотипа. Заголовок обложки — до 14 знаков в строке, не больше 3 строк.</span><span data-l="nl">Ronde, geometrische vormen die de lijnen van uw logo volgen. Covertitel: maximaal 14 tekens per regel, hoogstens 3 regels.</span></p></div>
+      <div class="type"><div class="row"><span>Nunito 600 · 700 · 800</span><span data-l="ru">текст и телефон</span><span data-l="nl">tekst en telefoon</span></div>
+        <div class="spec2">Eén aannemer, één aanspreekpunt.<br>0468 07 00 00</div>
+        <p><span data-l="ru">Мягкий и хорошо читается на телефоне. Им набраны подзаголовки, текст слайдов, субтитры в роликах и контакты.</span><span data-l="nl">Zacht en goed leesbaar op de telefoon. Voor ondertitels, slidetekst, ondertiteling in video's en contactgegevens.</span></p></div>
+    </div>
+
+    <div class="sub-h"><h3><span data-l="ru">Цвет видео: пресет «Тёплый лён»</span><span data-l="nl">Videokleur: preset "Warm linnen"</span></h3><span class="eyebrow"><span data-l="ru">потяните ползунок</span><span data-l="nl">sleep de schuif</span></span></div>
+    <div class="preset reveal">
+      <div class="ba" id="ba" style="--x:50%">
+        <img src="img/pp1_do.jpg" alt="voor"><img class="after" src="img/pp1_na.jpg" alt="na">
+        <span class="knob"></span><span class="lab l" data-l="ru">ДО</span><span class="lab l" data-l="nl">VOOR</span><span class="lab r">PRESET DORENO</span>
+      </div>
+      <div class="ptable">
+        <div class="prow"><b><span data-l="ru">Тон</span><span data-l="nl">Toon</span></b><span><span data-l="ru">Тёплый сдвиг: тени уходят в графит, светлые места — в лён</span><span data-l="nl">Warme verschuiving: schaduwen naar grafiet, lichte delen naar linnen</span></span></div>
+        <div class="prow"><b><span data-l="ru">Экспозиция</span><span data-l="nl">Belichting</span></b><span><span data-l="ru">Выравнивается по каждому кадру, светлые места не темнеют</span><span data-l="nl">Per shot gelijkgetrokken, lichte delen worden niet donkerder</span></span></div>
+        <div class="prow"><b><span data-l="ru">Контраст</span><span data-l="nl">Contrast</span></b><span><span data-l="ru">Мягкий, без «пластика», тени чуть приподняты</span><span data-l="nl">Zacht, geen "plastic" look, schaduwen licht opgetild</span></span></div>
+        <div class="prow"><b><span data-l="ru">Насыщенность</span><span data-l="nl">Verzadiging</span></b><span>92 %</span></div>
+        <div class="prow"><b><span data-l="ru">Качество</span><span data-l="nl">Kwaliteit</span></b><span><span data-l="ru">Каждый план из 4K, стабилизация «как на рельсах», лёгкий шумодав и резкость</span><span data-l="nl">Elk shot uit 4K, gestabiliseerd "als op rails", lichte ruisonderdrukking en scherpte</span></span></div>
+      </div>
+    </div>
+
+    <div class="sub-h"><h3><span data-l="ru">Графика в роликах</span><span data-l="nl">Grafiek in de video's</span></h3><span class="eyebrow">Motion</span></div>
+    <figure class="platen reveal" style="margin:0"><img src="img/platen.jpg" alt="Platen, titel, logo-moment en eindkaart" loading="lazy"></figure>
+    <p class="fineprint" style="margin-top:12px"><span data-l="ru">Плашка этапа · субтитры в одном месте · заголовок CAPS · момент логотипа · концевая карточка с контактами. Каждое появление сопровождается мягким звуком.</span><span data-l="nl">Stapplaat · ondertiteling op één vaste plek · titel in CAPS · logo-moment · eindkaart met contact. Elk element verschijnt met een zacht geluid.</span></p>
+  </div>
+</section>
+
+<!-- 02 MARKETING -->
+<section class="ch band deep" id="marketing">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div><div class="num" style="color:var(--brass)">02</div><h2 style="color:var(--linen)"><span data-l="ru">Маркетинговая упаковка</span><span data-l="nl">Marketingpakket</span></h2></div>
+      <p class="lead" style="color:rgba(243,239,231,.72)"><span data-l="ru">Одна главная мысль, которую клиент должен запомнить, и одинаковый голос во всех публикациях.</span><span data-l="nl">Eén kernboodschap die de klant onthoudt, en dezelfde stem in elke post.</span></p>
+    </div>
+    <div class="claim reveal">Van fundering<br>tot sleutel.<small><span data-l="ru">Один подрядчик, одно контактное лицо — от первого дня до сдачи.</span><span data-l="nl">Eén aannemer, één aanspreekpunt — van de eerste dag tot de oplevering.</span></small></div>
+    <div class="mk reveal">
+      <div class="c"><span class="k">01</span><h3>Sleutel-op-de-deur</h3><p><span data-l="ru">Дом под ключ: одна команда ведёт проект от фундамента до сдачи.</span><span data-l="nl">Sleutel-op-de-deur: één team van fundering tot oplevering.</span></p></div>
+      <div class="c"><span class="k">02</span><h3>Totaalrenovatie</h3><p><span data-l="ru">Полный ремонт: лестницы, полы, двери, ванные — всё до последней детали.</span><span data-l="nl">Totaalrenovatie: trappen, vloeren, deuren, badkamers — tot in elk detail.</span></p></div>
+      <div class="c"><span class="k">03</span><h3>Dakwerken</h3><p><span data-l="ru">Крыши и мансарды: мансардные окна и аккуратная отделка вокруг них.</span><span data-l="nl">Daken en zolders: dakramen en een strakke afwerking errond.</span></p></div>
+    </div>
+    <div class="mk reveal" style="margin-top:16px">
+      <div class="c"><span class="k"><span data-l="ru">Факт</span><span data-l="nl">Feit</span></span><h3><span data-l="ru">24 года опыта</span><span data-l="nl">24 jaar ervaring</span></h3><p><span data-l="ru">Гент и окрестности. Bollebergen 97, 9052 Gent.</span><span data-l="nl">Gent en omstreken. Bollebergen 97, 9052 Gent.</span></p></div>
+      <div class="c"><span class="k"><span data-l="ru">Девиз</span><span data-l="nl">Motto</span></span><h3>Bouwen zoals het hoort.</h3><p><span data-l="ru">Ваша собственная фраза из Instagram — мы сделали её подписью бренда.</span><span data-l="nl">Uw eigen zin uit Instagram — nu de vaste afsluiter van het merk.</span></p></div>
+      <div class="c"><span class="k"><span data-l="ru">Призыв</span><span data-l="nl">Oproep</span></span><h3>Stuur ons een bericht.</h3><p><span data-l="ru">Каждый пост и ролик заканчивается телефоном 0468 07 00 00.</span><span data-l="nl">Elke post en video eindigt met 0468 07 00 00.</span></p></div>
+    </div>
+  </div>
+</section>
+<section class="band" style="padding-block:40px 64px">
+  <div class="wrap">
+    <div class="voice-rules reveal">
+      <div class="vr"><h3><span data-l="ru">Как мы пишем</span><span data-l="nl">Hoe we schrijven</span></h3><ul>
+        <li><span data-l="ru">Нидерландский, на «u», спокойно и конкретно</span><span data-l="nl">Nederlands, met "u", rustig en concreet</span></li>
+        <li><span data-l="ru">Крючок — первой строкой, дальше 2–3 короткие строки</span><span data-l="nl">De haak in de eerste regel, daarna 2–3 korte regels</span></li>
+        <li><span data-l="ru">В конце — призыв и телефон</span><span data-l="nl">Altijd afsluiten met een oproep en het telefoonnummer</span></li>
+        <li><span data-l="ru">Только подтверждённые факты, без эмодзи</span><span data-l="nl">Alleen bevestigde feiten, geen emoji</span></li>
+        <li><span data-l="ru">Хэштеги: Instagram — 5, Facebook — 2</span><span data-l="nl">Hashtags: Instagram 5, Facebook 2</span></li></ul></div>
+      <div class="vr"><h3><span data-l="ru">Как устроен пост</span><span data-l="nl">Hoe een post is opgebouwd</span></h3><ul>
+        <li><span data-l="ru">01 — обложка: рубрика, заголовок, латунная полоса, подзаголовок, телефон</span><span data-l="nl">01 — cover: rubriek, titel, messing lijn, ondertitel, telefoon</span></li>
+        <li><span data-l="ru">02–04 — фото со стеклом графита, одна мысль на слайд</span><span data-l="nl">02–04 — foto met grafietglas, één gedachte per slide</span></li>
+        <li><span data-l="ru">05 — всегда контакты: «Stuur ons een bericht.»</span><span data-l="nl">05 — altijd contact: "Stuur ons een bericht."</span></li>
+        <li><span data-l="ru">Формат 1440 × 1800 (4:5), в сетке виден центр 3:4</span><span data-l="nl">Formaat 1440 × 1800 (4:5), in het raster ziet u het midden 3:4</span></li></ul>
+        <div class="rubrics" id="rubrics"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 GRID -->
+<section class="ch" id="raster">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div><div class="num">03</div><h2><span data-l="ru">Сетка Instagram</span><span data-l="nl">Instagram-raster</span></h2></div>
+      <p class="lead"><span data-l="ru">Так будет выглядеть профиль после 9 публикаций. Скачайте ряд и публикуйте по номерам — сетка сложится ровно так.</span><span data-l="nl">Zo ziet het profiel eruit na 9 posts. Download een rij en post in de volgorde van de nummers — dan klopt het raster precies.</span></p>
+    </div>
+    <div class="gridzone">
+      <div class="ig reveal" id="ig">
+        <div class="bar"><div class="av"><img src="logo/DORENO_beeldmerk_huis_wit.svg" alt=""></div><div class="who"><b>dorenobv</b><span>Doreno B.V. · Gent</span></div></div>
+        <div class="tabs"><i class="on">▦ POSTS</i><i>REELS</i></div>
+        <div class="cells" id="cells"></div>
+      </div>
+      <div class="rows reveal">
+        <label class="switch"><input type="checkbox" id="ord" checked><span><span data-l="ru">Показать порядок публикации</span><span data-l="nl">Toon de postvolgorde</span></span></label>
+        <ol class="order-steps">
+          <li><span data-l="ru">Instagram ставит новый пост первым — слева сверху. Поэтому начинаем с нижнего ряда.</span><span data-l="nl">Instagram zet de nieuwste post linksboven. Daarom beginnen we met de onderste rij.</span></li>
+          <li><span data-l="ru">Внутри ряда — справа налево: номер 1 первым, номер 9 последним.</span><span data-l="nl">Binnen een rij van rechts naar links: nummer 1 eerst, nummer 9 als laatste.</span></li>
+          <li><span data-l="ru">В каждом посте слайды по порядку: обложка → 02, 03, 04 → контакты. Текст скопируйте ниже.</span><span data-l="nl">In elke post de slides in volgorde: cover → 02, 03, 04 → contact. De tekst kopieert u hieronder.</span></li>
+        </ol>
+        <div id="rowcards" style="display:grid;gap:12px"></div>
+        <div class="note" style="margin-top:4px"><span><span data-l="ru">Рилсы не ломают сетку: после публикации откройте рилс → «…» → «Убрать из сетки профиля». Он останется во вкладке Reels.</span><span data-l="nl">Reels verstoren het raster niet: open de reel na het posten → "…" → "Verwijderen uit profielraster". Hij blijft zichtbaar onder Reels.</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 POSTS -->
+<section class="ch band" id="posts">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div><div class="num">04</div><h2><span data-l="ru">Публикации</span><span data-l="nl">Posts</span></h2></div>
+      <p class="lead"><span data-l="ru">Каждая карусель: обложка, три слайда, контакты. Нажмите на слайд, чтобы открыть крупно. Тексты для Instagram и Facebook копируются одной кнопкой.</span><span data-l="nl">Elke carrousel: cover, drie slides, contact. Tik op een slide om hem groot te openen. Teksten voor Instagram en Facebook kopieert u met één klik.</span></p>
+    </div>
+    <div class="posts" id="postlist"></div>
+  </div>
+</section>
+
+<!-- 05 REELS -->
+<section class="ch" id="reels">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div><div class="num">05</div><h2><span data-l="ru">Ролики и обложки</span><span data-l="nl">Reels en covers</span></h2></div>
+      <p class="lead"><span data-l="ru">Два ролика по одному объекту, без повторов кадров. 1080 × 1920, для Instagram Reels, TikTok и Facebook. Голос диктора — на ваш выбор в разделе «Голос и звук».</span><span data-l="nl">Twee video's van één project, zonder herhaalde beelden. 1080 × 1920, voor Instagram Reels, TikTok en Facebook. De stem kiest u zelf in het deel „Stem en geluid”.</span></p>
+    </div>
+    <div class="reels" id="reellist"></div>
+  </div>
+</section>
+
+<!-- 06 SOUND -->
+<section class="ch band" id="geluid">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div><div class="num">06</div><h2><span data-l="ru">Голос и звук</span><span data-l="nl">Stem en geluid</span></h2></div>
+      <p class="lead"><span data-l="ru">Постоянный голос диктора и мягкий голосовой фон без инструментов — узнаваемый звук Doreno в каждом ролике.</span><span data-l="nl">Een vaste stem en een zachte vocale achtergrond zonder instrumenten — het herkenbare geluid van Doreno in elke video.</span></p>
+    </div>
+    <div class="sub-h" style="margin-top:0"><h3><span data-l="ru">Выберите голос диктора</span><span data-l="nl">Kies de voice-over</span></h3><span class="eyebrow">ElevenLabs · Fish Audio</span></div><p class="fineprint" style="margin:-8px 0 18px"><span data-l="ru">Шесть живых голосов читают один и тот же текст. Напишите номер понравившегося в форме ниже — этим голосом озвучим оба ролика.</span><span data-l="nl">Zes natuurlijke stemmen lezen dezelfde tekst. Laat het nummer van uw favoriet weten via het formulier hieronder — met die stem spreken we beide video’s in.</span></p>
+    <div class="audios reveal" id="voices"></div>
+    <div class="sub-h"><h3><span data-l="ru">Фоновый звук</span><span data-l="nl">Achtergrondgeluid</span></h3><span class="eyebrow"><span data-l="ru">голос «как нота», без инструментов</span><span data-l="nl">stem "als een noot", zonder instrumenten</span></span></div>
+    <div class="audios reveal" id="beds"></div>
+  </div>
+</section>
+
+<!-- 07 CONTACT -->
+<section class="ch band deep" id="contact">
+  <div class="wrap contact">
+    <div class="reveal" style="display:grid;gap:18px">
+      <div class="num" style="font-family:var(--f-display);font-weight:300;color:var(--brass);font-size:20px">07</div>
+      <h2 style="font-size:clamp(34px,4.4vw,56px);color:var(--linen)"><span data-l="ru">Ваш ответ</span><span data-l="nl">Uw reactie</span></h2>
+      <p class="lead" style="color:rgba(243,239,231,.72)"><span data-l="ru">Напишите, что нравится и что поменять, или запишите голосовое. Сообщение уйдёт Ибрагиму в WhatsApp.</span><span data-l="nl">Schrijf wat u goed vindt en wat anders moet, of spreek een bericht in. Het gaat via WhatsApp naar Ibragim.</span></p>
+      <p class="fineprint"><span data-l="ru">Голосовое записывается прямо на странице. На телефоне оно отправляется в WhatsApp файлом; на компьютере файл сохраняется, и сразу открывается чат — его остаётся перетащить.</span><span data-l="nl">Het spraakbericht neemt u hier op. Op de telefoon gaat het als bestand naar WhatsApp; op de computer wordt het bewaard en opent de chat meteen — sleep het er dan in.</span></p>
+    </div>
+    <form class="form reveal" id="form" novalidate>
+      <label for="f-name"><span data-l="ru">Имя</span><span data-l="nl">Naam</span><input id="f-name" name="name" autocomplete="name" placeholder="Doreno"></label>
+      <label for="f-msg"><span data-l="ru">Сообщение</span><span data-l="nl">Bericht</span><textarea id="f-msg" name="msg" placeholder=""></textarea></label>
+      <div class="rec" id="rec">
+        <button type="button" class="btn dark sm" id="recBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><span id="recLbl"><span data-l="ru">Записать голосовое</span><span data-l="nl">Spraakbericht opnemen</span></span></button>
+        <span class="dot"></span><span class="tm" id="recTm">0:00</span>
+        <audio id="recPlay" controls hidden></audio>
+        <button type="button" class="icon-btn" id="recDel" hidden aria-label="Удалить запись"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 7h14M10 7V4h4v3M7 7l1 13h8l1-13"/></svg></button>
+        <label class="fineprint" id="recFile" hidden style="font-weight:700;letter-spacing:0;display:flex;gap:8px;align-items:center"><span data-l="ru">Или прикрепите аудиофайл:</span><span data-l="nl">Of voeg een audiobestand toe:</span><input type="file" id="recUpload" accept="audio/*" style="padding:6px;background:transparent;border:0"></label>
+      </div>
+      <div class="ctas">
+        <button type="submit" class="btn brass"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.3-.5 0-.9.2-3-.6a10.6 10.6 0 0 1-4.3-3.8c-.3-.5-1-1.4-1-2.7s.7-1.9 1-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2z"/></svg><span data-l="ru">Отправить в WhatsApp</span><span data-l="nl">Versturen via WhatsApp</span></button>
+        <button type="button" class="btn ghost" id="copyMsg" style="border-color:var(--line)"><span data-l="ru">Скопировать текст</span><span data-l="nl">Tekst kopiëren</span></button>
+      </div>
+      <p class="fineprint" id="waNote" style="margin:0"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap stack">
+    <div class="for"><span data-l="ru">Подготовлено для</span><span data-l="nl">Gemaakt voor</span><img src="logo/DORENO_logo_zonder_slogan_grafiet.svg" alt="Doreno"></div>
+    <div class="divider"></div>
+    <div class="logo-shine ibra" id="ibraLogo" role="img" aria-label="ibrahatuev"><img src="logo/ibrahatuev_dark.svg" alt="ibrahatuev — Life in every frame"><span class="gloss"></span></div>
+    <div class="proj">Project IBRATECH.AI</div>
+    <div class="proj-sub"><span data-l="ru">Стратегия · дизайн · видео · звук</span><span data-l="nl">Strategie · design · video · geluid</span> — <a href="https://ibratech.ai" target="_blank" rel="noopener">ibratech.ai</a></div>
+    <p class="fineprint" style="margin:0">© 2026 IBRATECH.AI · Doreno B.V. · Bollebergen 97, 9052 Gent</p>
+  </div>
+</footer>
+
+<div class="lb-wrap" id="lb" aria-hidden="true">
+  <div class="lb-top"><span id="lbCap"></span><span style="display:flex;gap:8px"><button class="icon-btn" id="lbDl" aria-label="Download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></button><button class="icon-btn" id="lbX" aria-label="Sluiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></span></div>
+  <div class="lb-img"><img id="lbImg" alt=""></div>
+  <div class="lb-nav"><button class="icon-btn" id="lbP" aria-label="Vorige"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button><button class="icon-btn" id="lbN" aria-label="Volgende"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<audio id="amb" src="audio/FON_GOLOS_2_myagkiy.mp3" loop preload="none"></audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const DATA={"zc": {"zip/DIKTOR_Jeroen.zip": [["audio/DIKTOR_Jeroen.mp3", "DIKTOR_Jeroen.mp3"]], "zip/DIKTOR_Rutger.zip": [["audio/DIKTOR_Rutger.mp3", "DIKTOR_Rutger.mp3"]], "zip/DORENO_P01.zip": [["posts/P01/P01_01_cover.jpg", "P01/P01_01_cover.jpg"], ["posts/P01/P01_02.jpg", "P01/P01_02.jpg"], ["posts/P01/P01_03.jpg", "P01/P01_03.jpg"], ["posts/P01/P01_04.jpg", "P01/P01_04.jpg"], ["posts/P01/P01_05_contact.jpg", "P01/P01_05_contact.jpg"], ["posts/P01/TEKST_Instagram.txt", "P01/TEKST_Instagram.txt"], ["posts/P01/TEKST_Facebook.txt", "P01/TEKST_Facebook.txt"]], "zip/DORENO_P02.zip": [["posts/P02/P02_01_cover.jpg", "P02/P02_01_cover.jpg"], ["posts/P02/P02_02.jpg", "P02/P02_02.jpg"], ["posts/P02/P02_03.jpg", "P02/P02_03.jpg"], ["posts/P02/P02_04.jpg", "P02/P02_04.jpg"], ["posts/P02/P02_05_contact.jpg", "P02/P02_05_contact.jpg"], ["posts/P02/TEKST_Instagram.txt", "P02/TEKST_Instagram.txt"], ["posts/P02/TEKST_Facebook.txt", "P02/TEKST_Facebook.txt"]], "zip/DORENO_P03.zip": [["posts/P03/P03_01_cover.jpg", "P03/P03_01_cover.jpg"], ["posts/P03/P03_02.jpg", "P03/P03_02.jpg"], ["posts/P03/P03_03.jpg", "P03/P03_03.jpg"], ["posts/P03/P03_04.jpg", "P03/P03_04.jpg"], ["posts/P03/P03_05_contact.jpg", "P03/P03_05_contact.jpg"], ["posts/P03/TEKST_Instagram.txt", "P03/TEKST_Instagram.txt"], ["posts/P03/TEKST_Facebook.txt", "P03/TEKST_Facebook.txt"]], "zip/DORENO_P04.zip": [["posts/P04/P04_01_cover.jpg", "P04/P04_01_cover.jpg"], ["posts/P04/P04_02.jpg", "P04/P04_02.jpg"], ["posts/P04/P04_03.jpg", "P04/P04_03.jpg"], ["posts/P04/P04_04.jpg", "P04/P04_04.jpg"], ["posts/P04/P04_05_contact.jpg", "P04/P04_05_contact.jpg"], ["posts/P04/TEKST_Instagram.txt", "P04/TEKST_Instagram.txt"], ["posts/P04/TEKST_Facebook.txt", "P04/TEKST_Facebook.txt"]], "zip/DORENO_P05.zip": [["posts/P05/P05_01_cover.jpg", "P05/P05_01_cover.jpg"], ["posts/P05/P05_02.jpg", "P05/P05_02.jpg"], ["posts/P05/P05_03.jpg", "P05/P05_03.jpg"], ["posts/P05/P05_04.jpg", "P05/P05_04.jpg"], ["posts/P05/P05_05_contact.jpg", "P05/P05_05_contact.jpg"], ["posts/P05/TEKST_Instagram.txt", "P05/TEKST_Instagram.txt"], ["posts/P05/TEKST_Facebook.txt", "P05/TEKST_Facebook.txt"]], "zip/DORENO_P06.zip": [["posts/P06/P06_01_cover.jpg", "P06/P06_01_cover.jpg"], ["posts/P06/P06_02.jpg", "P06/P06_02.jpg"], ["posts/P06/P06_03.jpg", "P06/P06_03.jpg"], ["posts/P06/P06_04.jpg", "P06/P06_04.jpg"], ["posts/P06/P06_05_contact.jpg", "P06/P06_05_contact.jpg"], ["posts/P06/TEKST_Instagram.txt", "P06/TEKST_Instagram.txt"], ["posts/P06/TEKST_Facebook.txt", "P06/TEKST_Facebook.txt"]], "zip/DORENO_P07.zip": [["posts/P07/P07_01_cover.jpg", "P07/P07_01_cover.jpg"], ["posts/P07/P07_02.jpg", "P07/P07_02.jpg"], ["posts/P07/P07_03.jpg", "P07/P07_03.jpg"], ["posts/P07/P07_04.jpg", "P07/P07_04.jpg"], ["posts/P07/P07_05_contact.jpg", "P07/P07_05_contact.jpg"], ["posts/P07/TEKST_Instagram.txt", "P07/TEKST_Instagram.txt"], ["posts/P07/TEKST_Facebook.txt", "P07/TEKST_Facebook.txt"]], "zip/DORENO_P08.zip": [["posts/P08/P08_01_cover.jpg", "P08/P08_01_cover.jpg"], ["posts/P08/P08_02.jpg", "P08/P08_02.jpg"], ["posts/P08/P08_03.jpg", "P08/P08_03.jpg"], ["posts/P08/P08_04.jpg", "P08/P08_04.jpg"], ["posts/P08/P08_05_contact.jpg", "P08/P08_05_contact.jpg"], ["posts/P08/TEKST_Instagram.txt", "P08/TEKST_Instagram.txt"], ["posts/P08/TEKST_Facebook.txt", "P08/TEKST_Facebook.txt"]], "zip/DORENO_P09.zip": [["posts/P09/P09_01_cover.jpg", "P09/P09_01_cover.jpg"], ["posts/P09/P09_02.jpg", "P09/P09_02.jpg"], ["posts/P09/P09_03.jpg", "P09/P09_03.jpg"], ["posts/P09/P09_04.jpg", "P09/P09_04.jpg"], ["posts/P09/P09_05_contact.jpg", "P09/P09_05_contact.jpg"], ["posts/P09/TEKST_Instagram.txt", "P09/TEKST_Instagram.txt"], ["posts/P09/TEKST_Facebook.txt", "P09/TEKST_Facebook.txt"]], "zip/DORENO_alle_posts.zip": [["posts/P09/P09_01_cover.jpg", "01_P09/P09_01_cover.jpg"], ["posts/P09/P09_02.jpg", "01_P09/P09_02.jpg"], ["posts/P09/P09_03.jpg", "01_P09/P09_03.jpg"], ["posts/P09/P09_04.jpg", "01_P09/P09_04.jpg"], ["posts/P09/P09_05_contact.jpg", "01_P09/P09_05_contact.jpg"], ["posts/P09/TEKST_Instagram.txt", "01_P09/TEKST_Instagram.txt"], ["posts/P09/TEKST_Facebook.txt", "01_P09/TEKST_Facebook.txt"], ["posts/P08/P08_01_cover.jpg", "02_P08/P08_01_cover.jpg"], ["posts/P08/P08_02.jpg", "02_P08/P08_02.jpg"], ["posts/P08/P08_03.jpg", "02_P08/P08_03.jpg"], ["posts/P08/P08_04.jpg", "02_P08/P08_04.jpg"], ["posts/P08/P08_05_contact.jpg", "02_P08/P08_05_contact.jpg"], ["posts/P08/TEKST_Instagram.txt", "02_P08/TEKST_Instagram.txt"], ["posts/P08/TEKST_Facebook.txt", "02_P08/TEKST_Facebook.txt"], ["posts/P07/P07_01_cover.jpg", "03_P07/P07_01_cover.jpg"], ["posts/P07/P07_02.jpg", "03_P07/P07_02.jpg"], ["posts/P07/P07_03.jpg", "03_P07/P07_03.jpg"], ["posts/P07/P07_04.jpg", "03_P07/P07_04.jpg"], ["posts/P07/P07_05_contact.jpg", "03_P07/P07_05_contact.jpg"], ["posts/P07/TEKST_Instagram.txt", "03_P07/TEKST_Instagram.txt"], ["posts/P07/TEKST_Facebook.txt", "03_P07/TEKST_Facebook.txt"], ["posts/P06/P06_01_cover.jpg", "04_P06/P06_01_cover.jpg"], ["posts/P06/P06_02.jpg", "04_P06/P06_02.jpg"], ["posts/P06/P06_03.jpg", "04_P06/P06_03.jpg"], ["posts/P06/P06_04.jpg", "04_P06/P06_04.jpg"], ["posts/P06/P06_05_contact.jpg", "04_P06/P06_05_contact.jpg"], ["posts/P06/TEKST_Instagram.txt", "04_P06/TEKST_Instagram.txt"], ["posts/P06/TEKST_Facebook.txt", "04_P06/TEKST_Facebook.txt"], ["posts/P05/P05_01_cover.jpg", "05_P05/P05_01_cover.jpg"], ["posts/P05/P05_02.jpg", "05_P05/P05_02.jpg"], ["posts/P05/P05_03.jpg", "05_P05/P05_03.jpg"], ["posts/P05/P05_04.jpg", "05_P05/P05_04.jpg"], ["posts/P05/P05_05_contact.jpg", "05_P05/P05_05_contact.jpg"], ["posts/P05/TEKST_Instagram.txt", "05_P05/TEKST_Instagram.txt"], ["posts/P05/TEKST_Facebook.txt", "05_P05/TEKST_Facebook.txt"], ["posts/P04/P04_01_cover.jpg", "06_P04/P04_01_cover.jpg"], ["posts/P04/P04_02.jpg", "06_P04/P04_02.jpg"], ["posts/P04/P04_03.jpg", "06_P04/P04_03.jpg"], ["posts/P04/P04_04.jpg", "06_P04/P04_04.jpg"], ["posts/P04/P04_05_contact.jpg", "06_P04/P04_05_contact.jpg"], ["posts/P04/TEKST_Instagram.txt", "06_P04/TEKST_Instagram.txt"], ["posts/P04/TEKST_Facebook.txt", "06_P04/TEKST_Facebook.txt"], ["posts/P03/P03_01_cover.jpg", "07_P03/P03_01_cover.jpg"], ["posts/P03/P03_02.jpg", "07_P03/P03_02.jpg"], ["posts/P03/P03_03.jpg", "07_P03/P03_03.jpg"], ["posts/P03/P03_04.jpg", "07_P03/P03_04.jpg"], ["posts/P03/P03_05_contact.jpg", "07_P03/P03_05_contact.jpg"], ["posts/P03/TEKST_Instagram.txt", "07_P03/TEKST_Instagram.txt"], ["posts/P03/TEKST_Facebook.txt", "07_P03/TEKST_Facebook.txt"], ["posts/P02/P02_01_cover.jpg", "08_P02/P02_01_cover.jpg"], ["posts/P02/P02_02.jpg", "08_P02/P02_02.jpg"], ["posts/P02/P02_03.jpg", "08_P02/P02_03.jpg"], ["posts/P02/P02_04.jpg", "08_P02/P02_04.jpg"], ["posts/P02/P02_05_contact.jpg", "08_P02/P02_05_contact.jpg"], ["posts/P02/TEKST_Instagram.txt", "08_P02/TEKST_Instagram.txt"], ["posts/P02/TEKST_Facebook.txt", "08_P02/TEKST_Facebook.txt"], ["posts/P01/P01_01_cover.jpg", "09_P01/P01_01_cover.jpg"], ["posts/P01/P01_02.jpg", "09_P01/P01_02.jpg"], ["posts/P01/P01_03.jpg", "09_P01/P01_03.jpg"], ["posts/P01/P01_04.jpg", "09_P01/P01_04.jpg"], ["posts/P01/P01_05_contact.jpg", "09_P01/P01_05_contact.jpg"], ["posts/P01/TEKST_Instagram.txt", "09_P01/TEKST_Instagram.txt"], ["posts/P01/TEKST_Facebook.txt", "09_P01/TEKST_Facebook.txt"]], "zip/DORENO_rij_1.zip": [["posts/P01/P01_01_cover.jpg", "09_P01/P01_01_cover.jpg"], ["posts/P01/P01_02.jpg", "09_P01/P01_02.jpg"], ["posts/P01/P01_03.jpg", "09_P01/P01_03.jpg"], ["posts/P01/P01_04.jpg", "09_P01/P01_04.jpg"], ["posts/P01/P01_05_contact.jpg", "09_P01/P01_05_contact.jpg"], ["posts/P01/TEKST_Instagram.txt", "09_P01/TEKST_Instagram.txt"], ["posts/P01/TEKST_Facebook.txt", "09_P01/TEKST_Facebook.txt"], ["posts/P02/P02_01_cover.jpg", "08_P02/P02_01_cover.jpg"], ["posts/P02/P02_02.jpg", "08_P02/P02_02.jpg"], ["posts/P02/P02_03.jpg", "08_P02/P02_03.jpg"], ["posts/P02/P02_04.jpg", "08_P02/P02_04.jpg"], ["posts/P02/P02_05_contact.jpg", "08_P02/P02_05_contact.jpg"], ["posts/P02/TEKST_Instagram.txt", "08_P02/TEKST_Instagram.txt"], ["posts/P02/TEKST_Facebook.txt", "08_P02/TEKST_Facebook.txt"], ["posts/P03/P03_01_cover.jpg", "07_P03/P03_01_cover.jpg"], ["posts/P03/P03_02.jpg", "07_P03/P03_02.jpg"], ["posts/P03/P03_03.jpg", "07_P03/P03_03.jpg"], ["posts/P03/P03_04.jpg", "07_P03/P03_04.jpg"], ["posts/P03/P03_05_contact.jpg", "07_P03/P03_05_contact.jpg"], ["posts/P03/TEKST_Instagram.txt", "07_P03/TEKST_Instagram.txt"], ["posts/P03/TEKST_Facebook.txt", "07_P03/TEKST_Facebook.txt"]], "zip/DORENO_rij_2.zip": [["posts/P04/P04_01_cover.jpg", "06_P04/P04_01_cover.jpg"], ["posts/P04/P04_02.jpg", "06_P04/P04_02.jpg"], ["posts/P04/P04_03.jpg", "06_P04/P04_03.jpg"], ["posts/P04/P04_04.jpg", "06_P04/P04_04.jpg"], ["posts/P04/P04_05_contact.jpg", "06_P04/P04_05_contact.jpg"], ["posts/P04/TEKST_Instagram.txt", "06_P04/TEKST_Instagram.txt"], ["posts/P04/TEKST_Facebook.txt", "06_P04/TEKST_Facebook.txt"], ["posts/P05/P05_01_cover.jpg", "05_P05/P05_01_cover.jpg"], ["posts/P05/P05_02.jpg", "05_P05/P05_02.jpg"], ["posts/P05/P05_03.jpg", "05_P05/P05_03.jpg"], ["posts/P05/P05_04.jpg", "05_P05/P05_04.jpg"], ["posts/P05/P05_05_contact.jpg", "05_P05/P05_05_contact.jpg"], ["posts/P05/TEKST_Instagram.txt", "05_P05/TEKST_Instagram.txt"], ["posts/P05/TEKST_Facebook.txt", "05_P05/TEKST_Facebook.txt"], ["posts/P06/P06_01_cover.jpg", "04_P06/P06_01_cover.jpg"], ["posts/P06/P06_02.jpg", "04_P06/P06_02.jpg"], ["posts/P06/P06_03.jpg", "04_P06/P06_03.jpg"], ["posts/P06/P06_04.jpg", "04_P06/P06_04.jpg"], ["posts/P06/P06_05_contact.jpg", "04_P06/P06_05_contact.jpg"], ["posts/P06/TEKST_Instagram.txt", "04_P06/TEKST_Instagram.txt"], ["posts/P06/TEKST_Facebook.txt", "04_P06/TEKST_Facebook.txt"]], "zip/DORENO_rij_3.zip": [["posts/P07/P07_01_cover.jpg", "03_P07/P07_01_cover.jpg"], ["posts/P07/P07_02.jpg", "03_P07/P07_02.jpg"], ["posts/P07/P07_03.jpg", "03_P07/P07_03.jpg"], ["posts/P07/P07_04.jpg", "03_P07/P07_04.jpg"], ["posts/P07/P07_05_contact.jpg", "03_P07/P07_05_contact.jpg"], ["posts/P07/TEKST_Instagram.txt", "03_P07/TEKST_Instagram.txt"], ["posts/P07/TEKST_Facebook.txt", "03_P07/TEKST_Facebook.txt"], ["posts/P08/P08_01_cover.jpg", "02_P08/P08_01_cover.jpg"], ["posts/P08/P08_02.jpg", "02_P08/P08_02.jpg"], ["posts/P08/P08_03.jpg", "02_P08/P08_03.jpg"], ["posts/P08/P08_04.jpg", "02_P08/P08_04.jpg"], ["posts/P08/P08_05_contact.jpg", "02_P08/P08_05_contact.jpg"], ["posts/P08/TEKST_Instagram.txt", "02_P08/TEKST_Instagram.txt"], ["posts/P08/TEKST_Facebook.txt", "02_P08/TEKST_Facebook.txt"], ["posts/P09/P09_01_cover.jpg", "01_P09/P09_01_cover.jpg"], ["posts/P09/P09_02.jpg", "01_P09/P09_02.jpg"], ["posts/P09/P09_03.jpg", "01_P09/P09_03.jpg"], ["posts/P09/P09_04.jpg", "01_P09/P09_04.jpg"], ["posts/P09/P09_05_contact.jpg", "01_P09/P09_05_contact.jpg"], ["posts/P09/TEKST_Instagram.txt", "01_P09/TEKST_Instagram.txt"], ["posts/P09/TEKST_Facebook.txt", "01_P09/TEKST_Facebook.txt"]], "zip/FON_GOLOS_1_myagkiy.zip": [["audio/FON_GOLOS_1_myagkiy.mp3", "FON_GOLOS_1_myagkiy.mp3"]], "zip/FON_GOLOS_2_myagkiy.zip": [["audio/FON_GOLOS_2_myagkiy.mp3", "FON_GOLOS_2_myagkiy.mp3"]], "zip/FON_GOLOS_3_myagkiy.zip": [["audio/FON_GOLOS_3_myagkiy.mp3", "FON_GOLOS_3_myagkiy.mp3"]], "zip/KINO_1_ElevenLabs_Willem.zip": [["audio/KINO_1_ElevenLabs_Willem.mp3", "KINO_1_ElevenLabs_Willem.mp3"]], "zip/KINO_2_ElevenLabs_Hans.zip": [["audio/KINO_2_ElevenLabs_Hans.mp3", "KINO_2_ElevenLabs_Hans.mp3"]], "zip/KINO_3_ElevenLabs_Bart.zip": [["audio/KINO_3_ElevenLabs_Bart.mp3", "KINO_3_ElevenLabs_Bart.mp3"]], "zip/KINO_4_FishAudio_Vlaamse_Vertelstem.zip": [["audio/KINO_4_FishAudio_Vlaamse_Vertelstem.mp3", "KINO_4_FishAudio_Vlaamse_Vertelstem.mp3"]], "zip/KINO_5_FishAudio_Wim.zip": [["audio/KINO_5_FishAudio_Wim.mp3", "KINO_5_FishAudio_Wim.mp3"]], "zip/KINO_6_FishAudio_Rustige_Stem.zip": [["audio/KINO_6_FishAudio_Rustige_Stem.mp3", "KINO_6_FishAudio_Rustige_Stem.mp3"]]}, "posts": [{"id": "P01", "tone": "light", "rubric": "Totaalrenovatie", "ig": "Stap voor stap naar een trap die klopt.\n\nEen trap gebruikt u elke dag, tientallen keren. Daarom werken we hem tot in elk detail af: recht, stevig en mooi.\n\nPlant u een renovatie in Gent of omstreken? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #aannemergent #totaalrenovatie #renovatie #trap", "fb": "Stap voor stap naar een trap die klopt.\n\nEen trap gebruikt u elke dag, tientallen keren. Daarom werken we hem tot in elk detail af: recht, stevig en mooi.\n\nPlant u een renovatie in Gent of omstreken? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #aannemergent", "ru": "Шаг за шагом к лестнице, где всё как надо. Лестницей пользуются каждый день, десятки раз — поэтому доводим её до последней ступени: ровно, крепко, красиво. Планируете ремонт в Генте и окрестностях? Звоните 0468 07 00 00 или пишите нам.", "step": 9}, {"id": "P02", "tone": "dark", "rubric": "Sleutel-op-de-deur", "ig": "Van fundering tot sleutel — met één aannemer.\n\nGeen vijf firma's die u zelf op elkaar moet afstemmen. Bij Doreno heeft u één team en één aanspreekpunt, van de eerste dag tot de oplevering.\n\nWilt u weten wat dat voor uw project betekent? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #sleutelopdedeur #aannemergent #nieuwbouw #renovatiegent", "fb": "Van fundering tot sleutel — met één aannemer.\n\nGeen vijf firma's die u zelf op elkaar moet afstemmen. Bij Doreno heeft u één team en één aanspreekpunt, van de eerste dag tot de oplevering.\n\nWilt u weten wat dat voor uw project betekent? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #sleutelopdedeur", "ru": "От фундамента до ключа — с одним подрядчиком. Не пять фирм, которые вы согласуете сами, а одна команда и одно контактное лицо от первого дня до сдачи. Хотите узнать, что это значит для вашего проекта? Звоните 0468 07 00 00 или пишите.", "step": 8}, {"id": "P03", "tone": "dark", "rubric": "Werf", "ig": "Eerst goed, dan mooi.\n\nEen mooie badkamer begint met wat u later nooit meer ziet: een waterdichte ondergrond. Pas daarna komen de tegels — vlak gelegd en strak gevoegd.\n\nBadkamer of totaalrenovatie in Gent en omstreken? Bel 0468 07 00 00.\n\n#doreno #tegelwerk #badkamerrenovatie #aannemergent #vakmanschap", "fb": "Eerst goed, dan mooi.\n\nEen mooie badkamer begint met wat u later nooit meer ziet: een waterdichte ondergrond. Pas daarna komen de tegels — vlak gelegd en strak gevoegd.\n\nBadkamer of totaalrenovatie in Gent en omstreken? Bel 0468 07 00 00.\n\n#doreno #tegelwerk", "ru": "Сначала правильно, потом красиво. Красивая ванная начинается с того, чего потом никто не видит, — гидроизоляции основания. Только потом плитка: ровно уложена, аккуратно затёрта. Ванная или полный ремонт в Генте и окрестностях — звоните 0468 07 00 00.", "step": 7}, {"id": "P04", "tone": "light", "rubric": "Afwerking", "ig": "De vloer maakt het verschil.\n\nU loopt er elke dag over, dus hij moet kloppen: vlak, strak tot in de hoeken en netjes aansluitend bij elke deur.\n\nBenieuwd wat we voor uw woning kunnen doen? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #vloeren #afwerking #renovatiegent #interieur", "fb": "De vloer maakt het verschil.\n\nU loopt er elke dag over, dus hij moet kloppen: vlak, strak tot in de hoeken en netjes aansluitend bij elke deur.\n\nBenieuwd wat we voor uw woning kunnen doen? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #vloeren", "ru": "Пол решает всё. Вы ходите по нему каждый день, поэтому он должен быть безупречным: ровный, аккуратный до самых углов, чисто примыкающий к каждой двери. Интересно, что мы можем сделать для вашего дома? Звоните 0468 07 00 00 или пишите нам.", "step": 6}, {"id": "P05", "tone": "dark", "rubric": "Afwerking", "ig": "Licht door glas.\n\nBinnendeuren met glas in een slank zwart kader laten het daglicht door de hele woning stromen. Open en ruim, en toch heeft elke kamer zijn eigen plek.\n\nOok zin in meer licht in huis? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #binnendeuren #glazenbinnendeur #interieur #aannemergent", "fb": "Licht door glas.\n\nBinnendeuren met glas in een slank zwart kader laten het daglicht door de hele woning stromen. Open en ruim, en toch heeft elke kamer zijn eigen plek.\n\nOok zin in meer licht in huis? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #binnendeuren", "ru": "Свет сквозь стекло. Межкомнатные двери со стеклом в тонкой чёрной раме пропускают дневной свет по всему дому. Открыто и просторно — и всё же у каждой комнаты своё место. Хотите больше света дома? Звоните 0468 07 00 00 или пишите нам.", "step": 5}, {"id": "P06", "tone": "dark", "rubric": "Sleutel-op-de-deur", "ig": "Klaar om in te wonen.\n\nWij leveren op als het echt af is — niet als het bijna af is. Zo kunt u op de eerste dag gewoon thuiskomen.\n\nDroomt u van een sleutel-op-de-deurwoning? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #sleutelopdedeur #nieuwewoning #aannemergent #gent", "fb": "Klaar om in te wonen.\n\nWij leveren op als het echt af is — niet als het bijna af is. Zo kunt u op de eerste dag gewoon thuiskomen.\n\nDroomt u van een sleutel-op-de-deurwoning? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #sleutelopdedeur", "ru": "Готово к жизни. Мы сдаём объект, когда он действительно готов, — а не «почти готов». Чтобы в первый же день вы просто пришли домой. Мечтаете о доме «под ключ»? Звоните 0468 07 00 00 или пишите.", "step": 4}, {"id": "P07", "tone": "light", "rubric": "Dakwerken", "ig": "Licht van boven.\n\nMet een dakraam op de juiste plek wordt een donkere zolder een kamer waar u graag bent. Wij werken alles rond het dakraam strak af.\n\nPlannen met uw dak of zolder? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #dakwerken #dakraam #zolderrenovatie #aannemergent", "fb": "Licht van boven.\n\nMet een dakraam op de juiste plek wordt een donkere zolder een kamer waar u graag bent. Wij werken alles rond het dakraam strak af.\n\nPlannen met uw dak of zolder? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #dakwerken", "ru": "Свет сверху. Мансардное окно в правильном месте превращает тёмный чердак в комнату, где хочется быть. Мы аккуратно отделываем всё вокруг мансардного окна. Планы на крышу или чердак? Звоните 0468 07 00 00 или пишите нам.", "step": 3}, {"id": "P08", "tone": "dark", "rubric": "Vakmanschap", "ig": "Bouwen zoals het hoort.\n\nNiets half, alles af. Of het nu om de fundering gaat of om de laatste trede: we werken met dezelfde zorg tot het einde.\n\n24 jaar ervaring in Gent en omstreken. Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #vakmanschap #aannemergent #totaalrenovatie #bouwen", "fb": "Bouwen zoals het hoort.\n\nNiets half, alles af. Of het nu om de fundering gaat of om de laatste trede: we werken met dezelfde zorg tot het einde.\n\n24 jaar ervaring in Gent en omstreken. Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #vakmanschap", "ru": "Строим как положено. Ничего наполовину — всё до конца, до последней детали. Будь то фундамент или последняя ступень, мы работаем с одинаковой тщательностью. 24 года опыта в Генте и окрестностях. Звоните 0468 07 00 00 или пишите нам.", "step": 2}, {"id": "P09", "tone": "dark", "rubric": "Vakmanschap", "ig": "Detail per detail.\n\nEen woning voelt pas af als de kleine dingen kloppen: het beslag, de latten, de aansluiting rond een raam. Daar maken we tijd voor.\n\nWilt u dat niveau van afwerking in uw woning? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #afwerking #interieur #vakmanschap #aannemergent", "fb": "Detail per detail.\n\nEen woning voelt pas af als de kleine dingen kloppen: het beslag, de latten, de aansluiting rond een raam. Daar maken we tijd voor.\n\nWilt u dat niveau van afwerking in uw woning? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #afwerking", "ru": "Деталь за деталью. Дом ощущается законченным, только когда сходятся мелочи: фурнитура, рейки, примыкание вокруг окна. На это мы находим время. Хотите такой уровень отделки у себя? Звоните 0468 07 00 00 или пишите нам.", "step": 1}], "rows": [["P01", "P02", "P03"], ["P04", "P05", "P06"], ["P07", "P08", "P09"]], "order": ["P09", "P08", "P07", "P06", "P05", "P04", "P03", "P02", "P01"], "reels": [{"id": "A", "title": "Van fundering tot sleutel.", "dur": "25 s", "voices": [], "about_ru": "От стройки к ключу: по коридору в гостиную, стройка под плёнкой, готовая лестница, фасад дома.", "about_nl": "Van werf tot sleutel: door de gang naar de leefruimte, de werf onder folie, de afgewerkte trap, de gevel.", "ig": "Van fundering tot sleutel.\n\nVan een lege ruimte tot een woning die klaar is om in te wonen. Eén team en één aanspreekpunt, van de eerste dag tot de oplevering.\n\n24 jaar ervaring in Gent en omstreken. Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #sleutelopdedeur #aannemergent #renovatiegent #vakmanschap", "fb": "Van fundering tot sleutel.\n\nVan een lege ruimte tot een woning die klaar is om in te wonen. Eén team en één aanspreekpunt, van de eerste dag tot de oplevering.\n\n24 jaar ervaring in Gent en omstreken. Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #sleutelopdedeur", "tt": "Van lege ruimte tot sleutel. Eén team, één aanspreekpunt. Gent en omstreken · 0468 07 00 00\n\n#doreno #aannemer #gent #renovatie #sleutelopdedeur", "ru": "От фундамента до ключа. От пустого помещения до дома, в котором можно жить. Одна команда и одно контактное лицо — от первого дня до сдачи. 24 года опыта в Генте и окрестностях. Звоните 0468 07 00 00 или пишите нам."}, {"id": "B", "title": "Een rondleiding bij Doreno.", "dur": "27 s", "voices": [], "about_ru": "Экскурсия по дому: фасад, коридор с плиткой, стеклянные двери, гостиная, лестница к окну.", "about_nl": "Een rondleiding: gevel, gang met motieftegels, glazen binnendeuren, leefruimte, trap naar het raam.", "ig": "Een rondleiding bij Doreno.\n\nTegels met motief in de inkom, glas in een slank zwart kader en een vloer die alles samenbrengt. Detail per detail, klaar om in te wonen.\n\nPlant u een renovatie in Gent of omstreken? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #rondleiding #interieur #afwerking #aannemergent", "fb": "Een rondleiding bij Doreno.\n\nTegels met motief in de inkom, glas in een slank zwart kader en een vloer die alles samenbrengt. Detail per detail, klaar om in te wonen.\n\nPlant u een renovatie in Gent of omstreken? Bel 0468 07 00 00 of stuur ons een bericht.\n\n#doreno #rondleiding", "tt": "Kom even binnen. Motieftegels, glas in zwart kader, licht van kamer tot kamer. Gent · 0468 07 00 00\n\n#doreno #rondleiding #interieur #renovatie #gent", "ru": "Экскурсия по дому Doreno. Плитка с узором у входа, стекло в тонкой чёрной раме и пол, который всё объединяет. Деталь за деталью — готово к жизни. Планируете ремонт в Генте и окрестностях? Звоните 0468 07 00 00 или пишите нам."}], "voices": [{"file": "KINO_1_ElevenLabs_Willem.mp3", "name": "1. Willem", "badge": "ElevenLabs", "desc": "<span data-l=\"ru\">Глубокий, кинематографичный голос с силой и теплом.</span><span data-l=\"nl\">Diepe, cinematische stem met kracht en warmte.</span>"}, {"file": "KINO_2_ElevenLabs_Hans.mp3", "name": "2. Hans", "badge": "ElevenLabs", "desc": "<span data-l=\"ru\">Фламандский, тёплый, «радийный».</span><span data-l=\"nl\">Vlaams, warm, met radiokwaliteit.</span>"}, {"file": "KINO_3_ElevenLabs_Bart.mp3", "name": "3. Bart", "badge": "ElevenLabs", "desc": "<span data-l=\"ru\">Спокойный и убедительный, опытный диктор.</span><span data-l=\"nl\">Rustig en overtuigend, ervaren voice-over.</span>"}, {"file": "KINO_4_FishAudio_Vlaamse_Vertelstem.mp3", "name": "4. Vlaamse Vertelstem", "badge": "Fish Audio", "desc": "<span data-l=\"ru\">Естественный фламандский рассказчик.</span><span data-l=\"nl\">Natuurlijke Vlaamse verteller.</span>"}, {"file": "KINO_5_FishAudio_Wim.mp3", "name": "5. Wim", "badge": "Fish Audio", "desc": "<span data-l=\"ru\">Глубокий, рекламный.</span><span data-l=\"nl\">Diep, met reclame-allure.</span>"}, {"file": "KINO_6_FishAudio_Rustige_Stem.mp3", "name": "6. Rustige Stem", "badge": "Fish Audio", "desc": "<span data-l=\"ru\">Спокойный, естественный.</span><span data-l=\"nl\">Rustig en natuurlijk.</span>"}], "beds": [{"file": "FON_GOLOS_1_myagkiy.mp3", "name": "<span data-l=\"ru\">Фон 1</span><span data-l=\"nl\">Achtergrond 1</span>", "badge": "", "desc": "<span data-l=\"ru\">Мягкий тёплый мужской голос, спокойная нота.</span><span data-l=\"nl\">Zachte, warme mannenstem, rustige noot.</span>"}, {"file": "FON_GOLOS_2_myagkiy.mp3", "name": "<span data-l=\"ru\">Фон 2</span><span data-l=\"nl\">Achtergrond 2</span>", "badge": "<span data-l=\"ru\">в роликах</span><span data-l=\"nl\">in de video’s</span>", "desc": "<span data-l=\"ru\">Мягкий голос «как нота» — звучит под диктором в обоих роликах.</span><span data-l=\"nl\">Zachte stem \"als een noot\" — klinkt onder de voice-over in beide video’s.</span>"}, {"file": "FON_GOLOS_3_myagkiy.mp3", "name": "<span data-l=\"ru\">Фон 3</span><span data-l=\"nl\">Achtergrond 3</span>", "badge": "", "desc": "<span data-l=\"ru\">Самый тихий и воздушный вариант.</span><span data-l=\"nl\">De stilste en meest luchtige variant.</span>"}], "peaks": {"DIKTOR_Jeroen.mp3": {"d": 23.68, "p": [0.879, 0.951, 0.486, 0.699, 0.305, 0.026, 0.028, 0.031, 0.828, 0.124, 0.901, 0.622, 0.783, 0.544, 0.512, 0.12, 0.028, 0.371, 0.926, 0.699, 1.0, 0.794, 0.434, 0.027, 0.031, 0.829, 0.308, 0.874, 0.612, 0.771, 0.568, 0.236, 0.091, 0.816, 0.61, 0.911, 0.641, 0.325, 0.025, 0.812, 0.695, 0.807, 0.646, 0.187, 0.023, 0.026, 0.836, 0.639, 0.616, 0.796, 0.683, 0.387, 0.022, 0.026, 0.696, 0.788, 0.667, 0.066, 0.262, 0.98, 0.826, 0.778, 0.8, 0.659, 0.722, 0.591, 0.025, 0.029, 0.705, 0.86, 0.522, 0.059]}, "DIKTOR_Rutger.mp3": {"d": 23.64, "p": [0.916, 0.993, 0.72, 0.897, 0.545, 0.01, 0.926, 0.123, 0.964, 0.682, 0.446, 0.611, 0.79, 0.536, 0.038, 0.008, 0.859, 0.806, 0.911, 1.0, 0.969, 0.69, 0.151, 0.014, 0.862, 0.75, 0.866, 0.716, 0.828, 0.676, 0.161, 0.005, 0.928, 0.899, 0.868, 0.9, 0.496, 0.02, 0.918, 0.93, 0.689, 0.064, 0.004, 0.943, 0.797, 0.122, 0.985, 0.685, 0.571, 0.717, 0.052, 0.004, 0.095, 0.909, 0.886, 0.821, 0.087, 0.312, 0.875, 0.839, 0.794, 0.782, 0.719, 0.733, 0.861, 0.018, 0.075, 0.801, 0.781, 0.912, 0.307, 0.008]}, "FON_GOLOS_1_myagkiy.mp3": {"d": 35.11, "p": [0.0, 0.0, 0.0, 0.027, 0.738, 0.834, 0.864, 0.848, 0.837, 0.725, 0.489, 0.352, 0.802, 0.714, 0.496, 0.104, 0.742, 0.797, 0.804, 0.8, 0.75, 0.546, 0.096, 0.553, 0.849, 0.852, 0.859, 0.937, 0.733, 0.801, 0.874, 0.856, 0.801, 0.591, 0.956, 1.0, 0.85, 0.771, 0.75, 0.745, 0.753, 0.865, 0.855, 0.796, 0.717, 0.477, 0.122, 0.918, 0.983, 0.931, 0.928, 0.92, 0.923, 0.904, 0.807, 0.811, 0.755, 0.781, 0.834, 0.77, 0.755, 0.68, 0.59, 0.276, 0.093, 0.052, 0.036, 0.024, 0.011, 0.004, 0.003, 0.001]}, "FON_GOLOS_2_myagkiy.mp3": {"d": 35.11, "p": [0.7, 0.802, 0.8, 0.784, 0.814, 0.794, 0.772, 0.855, 0.914, 0.796, 0.842, 0.819, 0.76, 0.768, 0.673, 0.283, 0.096, 0.051, 0.764, 0.999, 0.836, 0.816, 0.83, 0.813, 0.723, 0.658, 0.678, 0.294, 0.482, 0.741, 0.802, 0.847, 1.0, 0.838, 0.876, 0.881, 0.779, 0.744, 0.669, 0.365, 0.615, 0.746, 0.79, 0.845, 0.854, 0.847, 0.856, 0.853, 0.739, 0.729, 0.655, 0.32, 0.632, 0.766, 0.779, 0.936, 0.889, 0.78, 0.805, 0.788, 0.753, 0.759, 0.764, 0.705, 0.723, 0.613, 0.338, 0.252, 0.112, 0.042, 0.017, 0.003]}, "FON_GOLOS_3_myagkiy.mp3": {"d": 35.11, "p": [0.666, 1.0, 0.988, 0.918, 0.88, 0.912, 0.981, 0.924, 0.984, 0.941, 0.71, 0.126, 0.801, 0.923, 0.981, 0.886, 0.794, 0.612, 0.835, 0.959, 0.953, 0.919, 0.754, 0.377, 0.936, 0.855, 0.838, 0.865, 0.879, 0.951, 1.0, 0.994, 0.962, 0.802, 0.297, 0.079, 0.976, 0.955, 0.918, 0.938, 0.932, 0.914, 0.932, 0.953, 0.916, 0.904, 0.706, 0.706, 0.927, 0.951, 0.91, 0.882, 0.659, 0.768, 0.94, 0.927, 0.935, 0.936, 0.973, 0.91, 0.872, 0.884, 0.851, 0.811, 0.776, 0.675, 0.366, 0.084, 0.044, 0.022, 0.01, 0.004]}, "KINO_1_ElevenLabs_Willem.mp3": {"d": 9.2, "p": [0.018, 0.522, 0.456, 0.569, 0.494, 1.0, 0.854, 0.731, 0.528, 0.192, 0.601, 0.329, 0.238, 0.072, 0.013, 0.007, 0.005, 0.018, 0.671, 0.513, 0.449, 0.695, 0.626, 0.526, 0.388, 0.27, 0.079, 0.03, 0.005, 0.014, 0.447, 0.613, 0.524, 0.557, 0.502, 0.355, 0.379, 0.159, 0.039, 0.02, 0.003, 0.003, 0.003, 0.831, 0.768, 0.656, 0.989, 0.439, 0.03, 0.016, 0.257, 0.743, 0.504, 0.44, 0.191, 0.307, 0.205, 0.186, 0.031, 0.004, 0.003, 0.002, 0.077, 0.117, 0.201, 0.182, 0.176, 0.159, 0.125, 0.077, 0.054, 0.006]}, "KINO_2_ElevenLabs_Hans.mp3": {"d": 9.44, "p": [0.022, 0.833, 0.643, 0.803, 0.719, 1.0, 0.731, 0.703, 0.597, 0.279, 0.737, 0.39, 0.35, 0.07, 0.011, 0.002, 0.002, 0.582, 0.627, 0.639, 0.713, 0.871, 0.679, 0.651, 0.614, 0.192, 0.103, 0.004, 0.002, 0.022, 0.79, 0.519, 0.876, 0.757, 0.651, 0.399, 0.589, 0.295, 0.136, 0.068, 0.002, 0.003, 0.003, 0.402, 0.911, 0.537, 0.889, 0.785, 0.266, 0.003, 0.002, 0.801, 0.84, 0.578, 0.503, 0.516, 0.383, 0.46, 0.197, 0.065, 0.002, 0.002, 0.015, 0.165, 0.392, 0.435, 0.409, 0.374, 0.184, 0.119, 0.059, 0.003]}, "KINO_3_ElevenLabs_Bart.mp3": {"d": 9.52, "p": [0.07, 0.722, 0.503, 0.734, 0.737, 0.917, 0.795, 0.642, 0.403, 0.284, 0.534, 0.574, 0.276, 0.138, 0.02, 0.014, 0.015, 0.017, 0.922, 0.498, 0.537, 0.616, 0.678, 0.531, 0.488, 0.506, 0.14, 0.046, 0.014, 0.018, 0.714, 0.827, 0.615, 0.789, 0.698, 0.451, 0.466, 0.357, 0.205, 0.075, 0.012, 0.009, 0.01, 0.014, 0.931, 0.675, 0.741, 1.0, 0.338, 0.013, 0.016, 0.508, 0.993, 0.538, 0.649, 0.234, 0.394, 0.329, 0.229, 0.04, 0.018, 0.013, 0.014, 0.168, 0.314, 0.421, 0.307, 0.385, 0.315, 0.225, 0.127, 0.01]}, "KINO_4_FishAudio_Vlaamse_Vertelstem.mp3": {"d": 10.59, "p": [0.68, 0.489, 0.908, 0.832, 0.864, 0.364, 0.193, 0.212, 0.736, 0.856, 0.867, 0.758, 0.148, 0.042, 0.015, 0.015, 0.686, 0.471, 0.551, 0.65, 0.814, 0.8, 0.585, 0.451, 0.71, 0.713, 0.351, 0.078, 0.042, 0.029, 0.462, 0.649, 0.76, 0.886, 0.797, 0.643, 0.573, 0.09, 0.078, 0.028, 0.764, 0.785, 0.129, 0.694, 0.673, 0.23, 0.057, 0.037, 0.54, 0.939, 0.378, 0.787, 0.507, 0.197, 0.687, 0.175, 0.348, 1.0, 0.399, 0.092, 0.034, 0.149, 0.844, 0.917, 0.917, 0.517, 0.819, 0.702, 0.721, 0.411, 0.101, 0.05]}, "KINO_5_FishAudio_Wim.mp3": {"d": 9.01, "p": [0.261, 0.147, 1.0, 0.388, 0.799, 0.709, 0.855, 0.491, 0.723, 0.337, 0.675, 0.829, 0.681, 0.774, 0.068, 0.093, 0.593, 0.799, 0.574, 0.385, 0.818, 0.651, 0.567, 0.731, 0.996, 0.193, 0.241, 0.138, 0.235, 0.167, 0.929, 0.667, 0.573, 0.925, 0.577, 0.764, 0.758, 0.336, 0.352, 0.066, 0.059, 0.819, 0.289, 0.716, 0.652, 0.414, 0.173, 0.291, 0.2, 0.26, 0.882, 0.285, 0.999, 0.326, 0.711, 0.188, 0.698, 0.568, 0.395, 0.094, 0.019, 0.524, 0.452, 0.817, 0.955, 0.467, 0.525, 0.88, 0.737, 0.48, 0.314, 0.025]}, "KINO_6_FishAudio_Rustige_Stem.mp3": {"d": 7.76, "p": [0.064, 0.735, 0.456, 0.906, 0.854, 0.827, 0.636, 0.474, 0.837, 1.0, 0.446, 0.828, 0.514, 0.195, 0.052, 0.775, 0.55, 0.697, 0.656, 0.938, 0.786, 0.556, 0.591, 0.646, 0.383, 0.094, 0.021, 0.023, 0.027, 0.742, 0.548, 0.834, 0.769, 0.718, 0.734, 0.581, 0.15, 0.09, 0.022, 0.018, 0.731, 0.86, 0.331, 0.916, 0.667, 0.261, 0.041, 0.034, 0.855, 0.738, 0.637, 0.681, 0.401, 0.761, 0.616, 0.647, 0.849, 0.535, 0.097, 0.02, 0.389, 0.705, 0.975, 0.659, 0.711, 0.46, 0.777, 0.794, 0.728, 0.278, 0.094, 0.033]}}, "zipFor": {"audio/KINO_1_ElevenLabs_Willem.mp3": "zip/KINO_1_ElevenLabs_Willem.zip", "audio/KINO_2_ElevenLabs_Hans.mp3": "zip/KINO_2_ElevenLabs_Hans.zip", "audio/KINO_3_ElevenLabs_Bart.mp3": "zip/KINO_3_ElevenLabs_Bart.zip", "audio/KINO_4_FishAudio_Vlaamse_Vertelstem.mp3": "zip/KINO_4_FishAudio_Vlaamse_Vertelstem.zip", "audio/KINO_5_FishAudio_Wim.mp3": "zip/KINO_5_FishAudio_Wim.zip", "audio/KINO_6_FishAudio_Rustige_Stem.mp3": "zip/KINO_6_FishAudio_Rustige_Stem.zip", "audio/FON_GOLOS_1_myagkiy.mp3": "zip/FON_GOLOS_1_myagkiy.zip", "audio/FON_GOLOS_2_myagkiy.mp3": "zip/FON_GOLOS_2_myagkiy.zip", "audio/FON_GOLOS_3_myagkiy.mp3": "zip/FON_GOLOS_3_myagkiy.zip"}, "wa": ""};
+const WA_NUMBER=DATA.wa||"";
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+document.documentElement.classList.add('js');
+const IC={dl:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
+ cp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h9"/></svg>',
+ play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
+ pause:'<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>'};
+let LANG='ru';
+try{const s=localStorage.getItem('doreno_lang'); if(s==='nl'||s==='ru')LANG=s}catch(e){}
+if(location.hash==='#nl')LANG='nl'; if(location.hash==='#ru')LANG='ru';
+const L=(ru,nl)=>`<span data-l="ru">${ru}</span><span data-l="nl">${nl}</span>`;
+const tr=(ru,nl)=>LANG==='nl'?nl:ru;
+function setLang(l){LANG=l;document.documentElement.classList.remove('l-ru','l-nl');document.documentElement.classList.add('l-'+l);document.documentElement.lang=l;
+  $$('#lang b').forEach(b=>b.classList.toggle('on',b.dataset.v===l));try{localStorage.setItem('doreno_lang',l)}catch(e){}
+  $('#f-msg').placeholder=tr('Например: P03 оставить, в P05 поменять фото…','Bijvoorbeeld: P03 is goed, in P05 een andere foto…');}
+$('#lang').onclick=()=>setLang(LANG==='ru'?'nl':'ru');
+
+let tT;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(tT);tT=setTimeout(()=>t.classList.remove('on'),2200)}
+
+/* copy */
+async function copyText(text,btn){
+  try{await navigator.clipboard.writeText(text);toast(tr('Скопировано','Gekopieerd'))}
+  catch(e){const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+    let ok=false;try{ok=document.execCommand('copy')}catch(_){}ta.remove();toast(ok?tr('Скопировано','Gekopieerd'):tr('Выделите текст и скопируйте вручную','Selecteer de tekst en kopieer hem zelf'))}
+}
+
+/* downloads: native link on the website, platform save inside the Claude viewer */
+const IN_CLAUDE=!!(window.claude&&typeof window.claude.use==='function');
+let dlNs; const dlReady=IN_CLAUDE?window.claude.use('downloads').then(n=>dlNs=n).catch(()=>dlNs=null):Promise.resolve();
+const ALLOW=/\.(gif|png|jpe?g|webp|mp4|webm|txt|json|md|csv|zip|svg|pdf)$/i;
+async function saveFile(url,name){
+  if(IN_CLAUDE){
+    await dlReady;
+    if(!ALLOW.test(name)){const z=DATA.zipFor[url];if(z){url=z;name=z.split('/').pop()}}
+    if(!dlNs){toast(tr('Скачивание недоступно в этом окне','Downloaden kan niet in dit venster'));return}
+    try{toast(tr('Готовлю файл…','Bestand wordt klaargezet…'));let b;
+      if(/\.zip$/i.test(url)&&DATA.zc[url]&&window.JSZip){const z=new JSZip();for(const [src,p] of DATA.zc[url]){z.file(p,await (await fetch(src)).blob())}b=await z.generateAsync({type:'blob',compression:'STORE'})}
+      else b=await (await fetch(url)).blob();const r=await dlNs.save({filename:name,data:b});if(r&&r.status==='saved')toast(tr('Файл сохранён','Bestand bewaard'))}
+    catch(e){if(e&&e.code==='declined')return;toast(tr('Не удалось скачать','Downloaden mislukt'))}
+    return;
+  }
+  const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-dl]');if(b){e.preventDefault();saveFile(b.dataset.dl,b.dataset.name||b.dataset.dl.split('/').pop())}});
+
+/* palette */
+const SW=[["Grafiet","#4D4D4D","Цвет логотипа. Тёмные обложки (2 из 3), стекло 42 % поверх фото.","Kleur van het logo. Donkere covers (2 op 3), glas van 42 % over de foto."],
+["Diep grafiet","#262624","Текст на светлом, фон концевой карточки.","Tekst op licht, achtergrond van de eindkaart."],
+["Linnen","#F3EFE7","Светлые обложки (1 из 3), плашки в роликах.","Lichte covers (1 op 3), platen in de video's."],
+["Eik","#A97E50","Тёплый акцент на светлом, малые метки.","Warm accent op licht, kleine labels."],
+["Messing","#D5B565","Один акцент на кадр: полоса, рубрика, иконка телефона.","Eén accent per beeld: lijn, rubriek, telefoonicoon."]];
+$('#swatches').innerHTML=SW.map(s=>`<button class="sw" data-hex="${s[1]}"><div class="chip" style="background:${s[1]}"><i>${L('Копировать','Kopiëren')}</i></div><div class="meta"><b>${s[0]}</b><code>${s[1]}</code><span>${L(s[2],s[3])}</span></div></button>`).join('');
+$$('.sw').forEach(b=>b.onclick=()=>copyText(b.dataset.hex));
+
+/* posts */
+const ORDER=DATA.order, ROWS=DATA.rows;
+const P=DATA.posts, byId=Object.fromEntries(P.map(p=>[p.id,p]));
+const SLN=[['01_cover','Обложка','Cover'],['02','02','02'],['03','03','03'],['04','04','04'],['05_contact','Контакты','Contact']];
+const toneName=t=>t==='light'?L('Светлая · Linnen','Licht · Linnen'):L('Тёмная · Grafiet','Donker · Grafiet');
+const titleOf={P01:'Stap voor stap.',P02:'Van fundering tot sleutel.',P03:'Eerst goed, dan mooi.',P04:'De vloer maakt het verschil.',P05:'Licht door glas.',P06:'Klaar om in te wonen.',P07:'Licht van boven.',P08:'Bouwen zoals het hoort.',P09:'Detail per detail.'};
+const rubr=[...new Set(P.map(p=>p.rubric))]; $('#rubrics').innerHTML=rubr.map(r=>`<span>${r}</span>`).join('');
+const LBSET={};
+$('#postlist').innerHTML=P.map(p=>{
+  const imgs=SLN.map(s=>`posts/${p.id}/${p.id}_${s[0]}.jpg`); LBSET[p.id]=imgs;
+  return `<article class="post reveal" id="post-${p.id}">
+   <div class="car" data-p="${p.id}">
+     <div class="view"><div class="trk">${SLN.map((s,i)=>`<button data-lb="${p.id}" data-i="${i}" aria-label="${p.id} ${s[0]}"><img src="posts/${p.id}/t_${s[0]}.webp" alt="${p.id} ${s[0]}" ${i?'loading="lazy"':''}></button>`).join('')}</div>
+       <span class="cnt">01 / 05</span>
+       <button class="arr p" aria-label="prev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+       <button class="arr n" aria-label="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button>
+       <button class="icon-btn sdl" aria-label="download slide">${IC.dl}</button></div>
+     <div class="dots">${SLN.map((s,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>
+     <div class="thumbs">${SLN.map((s,i)=>`<button class="${i?'':'on'}" data-go="${i}"><img src="posts/${p.id}/t_${s[0]}.webp" alt="" loading="lazy"><span>${L(s[1],s[2])}</span></button>`).join('')}</div>
+   </div>
+   <div class="pinfo">
+     <div class="ptop"><span class="badge b">${p.id}</span><span class="badge ${p.tone==='light'?'tone-l':'tone-d'}">${toneName(p.tone)}</span><span class="badge">${p.rubric}</span></div>
+     <h3>${titleOf[p.id]}</h3>
+     <div class="order-hint">${L('В сетке: ряд '+(ROWS.findIndex(r=>r.includes(p.id))+1)+' · публикуется '+p.step+'-й из 9','In het raster: rij '+(ROWS.findIndex(r=>r.includes(p.id))+1)+' · wordt als '+p.step+'e van 9 gepost')}</div>
+     <div class="tabs2" role="tablist"><button class="on" data-t="ig">Instagram</button><button data-t="fb">Facebook</button><button data-t="ru">${L('Перевод','Vertaling (RU)')}</button></div>
+     <div class="txt" data-v="ig">${esc(p.ig)}<button class="btn dark sm cp">${IC.cp}${L('Копировать','Kopiëren')}</button></div>
+     <div class="txt" data-v="fb" hidden>${esc(p.fb)}<button class="btn dark sm cp">${IC.cp}${L('Копировать','Kopiëren')}</button></div>
+     <div class="txt ru" data-v="ru" hidden>${esc(p.ru)}<button class="btn ghost sm cp">${IC.cp}${L('Копировать','Kopiëren')}</button></div>
+     <div class="pact"><button class="btn brass sm" data-dl="zip/DORENO_${p.id}.zip" data-name="DORENO_${p.id}.zip">${IC.dl}${L('Скачать пост: 5 слайдов + тексты','Post downloaden: 5 slides + teksten')}</button></div>
+   </div>
+  </article>`}).join('');
+$$('.car').forEach(c=>{const id=c.dataset.p,trk=$('.trk',c),cnt=$('.cnt',c),dots=$$('.dots i',c),th=$$('.thumbs button',c);let i=0;
+  const go=k=>{i=(k+5)%5;trk.style.transform=`translateX(${-i*100}%)`;cnt.textContent=String(i+1).padStart(2,'0')+' / 05';dots.forEach((d,j)=>d.classList.toggle('on',j===i));th.forEach((t,j)=>t.classList.toggle('on',j===i))};
+  $('.arr.p',c).onclick=()=>go(i-1);$('.arr.n',c).onclick=()=>go(i+1);th.forEach(t=>t.onclick=()=>go(+t.dataset.go));
+  $('.sdl',c).onclick=()=>{const u=LBSET[id][i];saveFile(u,u.split('/').pop())};
+  let x0=null;const v=$('.view',c);v.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});v.addEventListener('touchend',e=>{if(x0==null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40){go(d<0?i+1:i-1);e.preventDefault()}x0=null});
+});
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+$$('.post,.reel').forEach(bindTabs);
+function bindTabs(card){
+  $$('.tabs2 button',card).forEach(b=>b.onclick=()=>{$$('.tabs2 button',card).forEach(x=>x.classList.toggle('on',x===b));$$('.txt',card).forEach(t=>t.hidden=t.dataset.v!==b.dataset.t)});
+  $$('.txt .cp',card).forEach(b=>b.onclick=()=>{const t=b.parentElement.cloneNode(true);t.querySelector('.cp').remove();copyText(t.textContent.trim())});
+}
+
+/* grid */
+$('#cells').innerHTML=ROWS.flat().map(id=>`<button class="cell" data-row="${ROWS.findIndex(r=>r.includes(id))}" onclick="document.getElementById('post-${id}').scrollIntoView({behavior:'smooth',block:'start'})" aria-label="${id}"><img src="posts/${id}/grid.webp" alt="${id}" loading="lazy"><span class="row-hl"></span><span class="stp">${byId[id].step}</span></button>`).join('');
+$('#rowcards').innerHTML=ROWS.map((r,i)=>{const steps=r.map(id=>byId[id].step);return `<div class="rowcard" data-row="${i}"><div class="mini">${r.map(id=>`<img src="posts/${id}/grid.webp" alt="">`).join('')}</div>
+ <div><b>${L('Ряд '+(i+1),'Rij '+(i+1))} · ${r.join(' · ')}</b><span>${L('Публикации №'+Math.min(...steps)+'–'+Math.max(...steps)+(i===2?' — начать отсюда':''),'Posts nr. '+Math.min(...steps)+'–'+Math.max(...steps)+(i===2?' — begin hier':''))}</span></div>
+ <button class="btn dark sm" data-dl="zip/DORENO_rij_${i+1}.zip" data-name="DORENO_rij_${i+1}.zip">${IC.dl}${L('Скачать ряд','Rij downloaden')}</button></div>`}).join('');
+$$('.rowcard').forEach(c=>{const on=v=>$$('.cell').forEach(x=>x.classList.toggle('hl',v&&x.dataset.row===c.dataset.row));c.onmouseenter=()=>on(1);c.onmouseleave=()=>on(0)});
+const ordT=()=>$('#ig').classList.toggle('show-order',$('#ord').checked);$('#ord').onchange=ordT;ordT();
+
+/* lightbox */
+let lbSet=null,lbI=0;
+function lbShow(){const u=LBSET[lbSet][lbI];$('#lbImg').src=u;$('#lbCap').textContent=`${lbSet} · ${String(lbI+1).padStart(2,'0')} / 05`;}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-lb]');if(!b)return;lbSet=b.dataset.lb;lbI=+b.dataset.i;lbShow();$('#lb').classList.add('on');$('#lb').setAttribute('aria-hidden','false')});
+const lbClose=()=>{$('#lb').classList.remove('on');$('#lb').setAttribute('aria-hidden','true')};
+$('#lbX').onclick=lbClose;$('#lb').addEventListener('click',e=>{if(e.target.id==='lb'||e.target.classList.contains('lb-img'))lbClose()});
+$('#lbP').onclick=()=>{lbI=(lbI+4)%5;lbShow()};$('#lbN').onclick=()=>{lbI=(lbI+1)%5;lbShow()};
+$('#lbDl').onclick=()=>{const u=LBSET[lbSet][lbI];saveFile(u,u.split('/').pop())};
+document.addEventListener('keydown',e=>{if(!$('#lb').classList.contains('on'))return;if(e.key==='Escape')lbClose();if(e.key==='ArrowRight')$('#lbN').click();if(e.key==='ArrowLeft')$('#lbP').click()});
+let tx0=null;$('#lb').addEventListener('touchstart',e=>tx0=e.touches[0].clientX,{passive:true});$('#lb').addEventListener('touchend',e=>{if(tx0==null)return;const d=e.changedTouches[0].clientX-tx0;if(Math.abs(d)>50)(d<0?$('#lbN'):$('#lbP')).click();tx0=null});
+
+/* reels */
+const R=DATA.reels;
+$('#reellist').innerHTML=R.map(r=>`<article class="reel reveal" data-r="${r.id}">
+  <div class="vcol">
+   <div class="vbox"><video src="video/DORENO_REEL_${r.id}${r.voices.length?"_"+r.voices[0]:""}.mp4" poster="video/DORENO_REEL_${r.id}_cover.jpg" playsinline preload="none" controls></video><button class="play" aria-label="play"><span>${IC.play}</span></button></div>
+   ${r.voices.length>1?`<div class="seg" role="group" aria-label="Диктор">${r.voices.map((v,i)=>`<button class="${i?'':'on'}" data-v="${v}">${v}</button>`).join('')}</div>`:`<p class="fineprint" style="margin:0;text-align:center;max-width:300px">${L('Озвучку заменим на голос, который вы выберете ниже.','De voice-over vervangen we door de stem die u hieronder kiest.')}</p>`}
+  </div>
+  <div class="rinfo">
+   <div class="ptop"><span class="badge b">Reel ${r.id}</span><span class="badge">${r.dur}</span><span class="badge">1080 × 1920</span></div>
+   <h3>${r.title}</h3>
+   <p style="margin:0;color:var(--muted)">${L(r.about_ru,r.about_nl)}</p>
+   <div class="tabs2"><button class="on" data-t="ig">Instagram</button><button data-t="fb">Facebook</button><button data-t="tt">TikTok</button><button data-t="ru">${L('Перевод','Vertaling (RU)')}</button></div>
+   ${['ig','fb','tt'].map((k,i)=>`<div class="txt" data-v="${k}" ${i?'hidden':''}>${esc(r[k])}<button class="btn dark sm cp">${IC.cp}${L('Копировать','Kopiëren')}</button></div>`).join('')}
+   <div class="txt ru" data-v="ru" hidden>${esc(r.ru)}<button class="btn ghost sm cp">${IC.cp}${L('Копировать','Kopiëren')}</button></div>
+   <div class="pact"><button class="btn brass sm dlv">${IC.dl}${L('Скачать ролик','Video downloaden')}</button><button class="btn ghost sm" data-dl="video/DORENO_REEL_${r.id}_cover.jpg" data-name="DORENO_REEL_${r.id}_cover.jpg">${IC.dl}${L('Скачать обложку','Cover downloaden')}</button></div>
+  </div>
+  <div class="ccol"><div class="eyebrow">${L('Обложка ролика','Cover van de reel')}</div>
+   <button class="cover" style="aspect-ratio:9/16" onclick="openCover('${r.id}')" aria-label="cover"><img src="video/DORENO_REEL_${r.id}_cover.jpg" alt="Reel ${r.id} cover" loading="lazy"></button>
+   <p class="fineprint" style="margin:0">${L('Текст обложки стоит в центре 3:4 — в сетке профиля ничего не обрезается.','De tekst staat in het midden (3:4) — in het profielraster wordt niets afgesneden.')}</p></div></article>`).join('');
+LBSET.covA=['video/DORENO_REEL_A_cover.jpg','video/DORENO_REEL_B_cover.jpg'];
+window.openCover=id=>{lbSet='covA';lbI=id==='A'?0:1;$('#lbImg').src=LBSET.covA[lbI];$('#lbCap').textContent='Reel '+id+' · cover';$('#lb').classList.add('on')};
+$$('.reel').forEach(card=>{bindTabs(card);const v=$('video',card),box=$('.vbox',card);const sb=$('.seg button.on',card);let cur=sb?sb.dataset.v:'';const vsrc=()=>`video/DORENO_REEL_${card.dataset.r}${cur?'_'+cur:''}.mp4`;
+  $('.play',card).onclick=()=>{v.play()};v.onplay=()=>{box.classList.add('playing');duck(v)};v.onpause=()=>{unduck(v)};v.onended=()=>{box.classList.remove('playing');unduck(v)};
+  $$('.seg button',card).forEach(b=>b.onclick=()=>{if(b.dataset.v===cur)return;cur=b.dataset.v;$$('.seg button',card).forEach(x=>x.classList.toggle('on',x===b));const t=v.currentTime,pl=!v.paused;v.src=vsrc();v.addEventListener('loadedmetadata',()=>{v.currentTime=t;if(pl)v.play()},{once:true});if(!pl)v.load()});
+  $('.dlv',card).onclick=()=>{const u=vsrc();saveFile(u,u.split('/').pop())};
+});
+
+/* audio players */
+const ALL=[]; const amb=$('#amb');
+function player(host,a){const pk=DATA.peaks[a.file];const el=document.createElement('div');el.className='au';
+  el.innerHTML=`<button class="pb" aria-label="play">${IC.play}</button><div class="body"><div class="h"><b>${a.name}</b>${a.badge?`<span class="badge b">${a.badge}</span>`:''}</div><div class="d">${a.desc}</div>
+  <div class="wave">${pk.p.map(x=>`<i style="height:${Math.max(8,x*100)}%"></i>`).join('')}</div><div class="ft"><span class="tm">0:00 / ${fmt(pk.d)}</span><button class="btn ghost sm" data-dl="audio/${a.file}" data-name="${a.file}" style="padding:6px 12px">${IC.dl}${L('Скачать','Download')}</button></div></div>`;
+  host.appendChild(el);const au=new Audio();au.preload='none';au.src='audio/'+a.file;const bars=$$('.wave i',el),pb=$('.pb',el),tm=$('.tm',el);
+  const upd=()=>{const f=au.currentTime/(au.duration||pk.d);const n=Math.round(f*bars.length);bars.forEach((b,i)=>b.classList.toggle('p',i<n));tm.textContent=fmt(au.currentTime)+' / '+fmt(au.duration||pk.d)};
+  au.ontimeupdate=upd;au.onplay=()=>{pb.innerHTML=IC.pause;el.classList.add('cur');ALL.forEach(o=>{if(o!==au)o.pause()});duck(au)};au.onpause=au.onended=()=>{pb.innerHTML=IC.play;el.classList.remove('cur');unduck(au)};
+  pb.onclick=()=>au.paused?au.play():au.pause();
+  $('.wave',el).onclick=e=>{const r=e.currentTarget.getBoundingClientRect();const f=(e.clientX-r.left)/r.width;const go=()=>{au.currentTime=f*(au.duration||pk.d);upd()};if(au.readyState<1){au.addEventListener('loadedmetadata',go,{once:true});au.play()}else go()};
+  ALL.push(au);}
+function fmt(s){s=Math.max(0,Math.round(s||0));return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')}
+DATA.voices.forEach(a=>player($('#voices'),a));DATA.beds.forEach(a=>player($('#beds'),a));
+
+/* ambient sound: starts with the first tap/click, fades in, ducks under other media */
+let ambOn=false,ambWanted=true,ducked=new Set(),fadeT,actx=null,gain=null;
+const gv=()=>gain?gain.gain.value:amb.volume, sv=v=>{if(gain)gain.gain.value=v;else amb.volume=v};
+function fadeTo(v,ms=900){clearInterval(fadeT);const s=gv(),t0=performance.now();fadeT=setInterval(()=>{const k=Math.min(1,(performance.now()-t0)/ms);sv(s+(v-s)*k);if(k>=1){clearInterval(fadeT);if(v===0)amb.pause()}},40)}
+function ambStart(){if(ambOn)return;
+  try{if(!actx){const C=window.AudioContext||window.webkitAudioContext;if(C){actx=new C();gain=actx.createGain();gain.gain.value=0;actx.createMediaElementSource(amb).connect(gain).connect(actx.destination)}}if(actx&&actx.state==='suspended')actx.resume()}catch(e){actx=null;gain=null}
+  sv(0);amb.play().then(()=>{ambOn=true;$('#snd').classList.add('on');$('#snd').setAttribute('aria-pressed','true');if(!ducked.size)fadeTo(.2,1800)}).catch(()=>{})}
+function ambStop(){ambOn=false;$('#snd').classList.remove('on');$('#snd').setAttribute('aria-pressed','false');fadeTo(0,500)}
+$('#snd').onclick=e=>{e.stopPropagation();if(ambOn){ambWanted=false;ambStop()}else{ambWanted=true;ambStart()}};
+const firstGesture=e=>{if(e.target.closest&&e.target.closest('#snd'))return;if(ambWanted)ambStart();['pointerdown','keydown'].forEach(t=>document.removeEventListener(t,firstGesture,true))};
+['pointerdown','keydown'].forEach(t=>document.addEventListener(t,firstGesture,true));
+function duck(m){ducked.add(m);if(ambOn)fadeTo(0.0001,400)}
+function unduck(m){ducked.delete(m);if(ambOn&&!ducked.size){if(amb.paused)amb.play().catch(()=>{});fadeTo(.2,1200)}}
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&ambOn)amb.pause();else if(ambOn&&!ducked.size)amb.play().catch(()=>{})});
+
+/* logo shine: periodic sweep, instant on hover/tap */
+function shine(el){el.classList.remove('sweep');void el.offsetWidth;el.classList.add('sweep')}
+[$('#heroLogo'),$('#ibraLogo')].forEach((el,i)=>{let busy=0;const go=()=>{if(Date.now()-busy<3500)return;busy=Date.now();shine(el)};el.addEventListener('pointerenter',go);el.addEventListener('click',go);setTimeout(go,1200+i*700);setInterval(go,8000+i*1500)});
+
+/* before/after */
+(()=>{const ba=$('#ba');let drag=false;const set=x=>{const r=ba.getBoundingClientRect();const p=Math.min(100,Math.max(0,(x-r.left)/r.width*100));ba.style.setProperty('--x',p+'%')};
+ ba.addEventListener('pointerdown',e=>{drag=true;ba.setPointerCapture(e.pointerId);set(e.clientX)});ba.addEventListener('pointermove',e=>{if(drag)set(e.clientX)});ba.addEventListener('pointerup',()=>drag=false);
+ let t=0;const idle=setInterval(()=>{if(drag){clearInterval(idle);return}t+=.04;ba.style.setProperty('--x',(50+28*Math.sin(t))+'%')},50);ba.addEventListener('pointerdown',()=>clearInterval(idle),{once:true});})();
+
+/* nav highlight + reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;$$('#nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+id))}}),{rootMargin:'-45% 0px -50% 0px'});
+$$('main section[id]').forEach(s=>io.observe(s));
+const rv=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.remove('pre');rv.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+$$('.reveal').forEach(el=>{const r=el.getBoundingClientRect();if(r.top>innerHeight){el.classList.add('pre');rv.observe(el)}});
+
+/* hero video: muted preview, pauses when off screen */
+const hv=$('#heroVid');new IntersectionObserver(es=>es.forEach(e=>{e.isIntersecting?hv.play().catch(()=>{}):hv.pause()})).observe(hv);
+
+/* contact form → WhatsApp; voice note via recorder or file */
+let voiceBlob=null,voiceName='',mr=null,chunks=[],t0=0,tick;
+const recEl=$('#rec'),recBtn=$('#recBtn'),recTm=$('#recTm'),recPlay=$('#recPlay'),recDel=$('#recDel');
+const canRec=!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder)&&!IN_CLAUDE;
+if(!canRec){$('#recFile').hidden=false;recBtn.hidden=true;recTm.hidden=true}
+function setVoice(b,name){voiceBlob=b;voiceName=name;recPlay.src=URL.createObjectURL(b);recPlay.hidden=false;recDel.hidden=false}
+recBtn.onclick=async()=>{
+  if(mr&&mr.state==='recording'){mr.stop();return}
+  try{const st=await navigator.mediaDevices.getUserMedia({audio:true});
+    const mt=['audio/mp4','audio/webm;codecs=opus','audio/webm','audio/ogg'].find(t=>MediaRecorder.isTypeSupported&&MediaRecorder.isTypeSupported(t))||'';
+    mr=new MediaRecorder(st,mt?{mimeType:mt}:undefined);chunks=[];mr.ondataavailable=e=>e.data.size&&chunks.push(e.data);
+    mr.onstop=()=>{st.getTracks().forEach(t=>t.stop());clearInterval(tick);recEl.classList.remove('on');const type=mr.mimeType||'audio/webm';const ext=type.includes('mp4')?'m4a':type.includes('ogg')?'ogg':'webm';
+      setVoice(new Blob(chunks,{type}),'Doreno_spraakbericht.'+ext);$('#recLbl').innerHTML=L('Записать заново','Opnieuw opnemen')};
+    mr.start();t0=Date.now();recEl.classList.add('on');$('#recLbl').innerHTML=L('Остановить','Stoppen');tick=setInterval(()=>recTm.textContent=fmt((Date.now()-t0)/1000),250)}
+  catch(e){toast(tr('Нет доступа к микрофону — прикрепите файл','Geen toegang tot de microfoon — voeg een bestand toe'));$('#recFile').hidden=false}
+};
+recDel.onclick=()=>{voiceBlob=null;recPlay.hidden=true;recDel.hidden=true;recTm.textContent='0:00';$('#recUpload').value=''};
+$('#recUpload').onchange=e=>{const f=e.target.files[0];if(f)setVoice(f,f.name)};
+function composeMsg(){const n=$('#f-name').value.trim(),m=$('#f-msg').value.trim();return `Doreno — ${tr('отзыв о презентации','reactie op de presentatie')}${n?' ('+n+')':''}:\n${m||tr('(голосовое сообщение)','(spraakbericht)')}`}
+const waUrl=t=>'https://wa.me/'+WA_NUMBER.replace(/\D/g,'')+'?text='+encodeURIComponent(t);
+$('#copyMsg').onclick=()=>copyText(composeMsg());
+$('#form').addEventListener('submit',async e=>{e.preventDefault();
+  if(!$('#f-msg').value.trim()&&!voiceBlob){toast(tr('Напишите сообщение или запишите голосовое','Schrijf een bericht of spreek er een in'));$('#f-msg').focus();return}
+  const text=composeMsg();
+  if(voiceBlob&&!IN_CLAUDE){const file=new File([voiceBlob],voiceName,{type:voiceBlob.type||'audio/mp4'});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],text});return}catch(err){if(err&&err.name==='AbortError')return}}
+    const a=document.createElement('a');a.href=URL.createObjectURL(file);a.download=voiceName;document.body.appendChild(a);a.click();a.remove();
+    toast(tr('Голосовое сохранено — перетащите его в чат','Spraakbericht bewaard — sleep het in de chat'));}
+  else if(voiceBlob&&IN_CLAUDE){toast(tr('Аудиофайл прикрепите в WhatsApp вручную','Voeg het audiobestand zelf toe in WhatsApp'))}
+  const a=document.createElement('a');a.href=waUrl(text);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+});
+if(!WA_NUMBER)$('#waNote').textContent='';
+
+setLang(LANG);
+</script>
+</body></html>
